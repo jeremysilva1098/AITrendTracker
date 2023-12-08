@@ -46,6 +46,7 @@ class newsApi:
             "Authorization": f"Bearer {self.news_key}"
         }
         response = requests.get(self.news_url, params=params, headers=headers)
+        assert response.status_code == 200
         # get the JSON
         res = json.loads(response.content)
         # create output
