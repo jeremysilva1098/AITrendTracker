@@ -48,7 +48,8 @@ jobs:
         git config --global user.email 'jsilva1098@gmail.com'
         git add .
         git commit -m 'Update HTML files'
-        git push https://${{ secrets.GH_PAT }}@github.com/jeremysilva1098/AITrendTracker.git
+        #git push https://${{ secrets.GH_PAT }}@github.com/jeremysilva1098/AITrendTracker.git
+        git push
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.3
