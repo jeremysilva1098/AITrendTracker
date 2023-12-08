@@ -12,7 +12,6 @@ from langchain.document_loaders import UnstructuredURLLoader, SeleniumURLLoader
 dotenv_dir = f"{par_dir}/.env"
 print("Reading .env variables from: ", dotenv_dir)
 load_dotenv(dotenv_path=dotenv_dir)'''
-load_dotenv()
 
 
 class newsApi:
