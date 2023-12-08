@@ -3,6 +3,8 @@ from gpt import freeplayGPT
 import datetime
 import json
 from data_models import ArticleSummary
+import os
+
 
 # set the min and max date
 maxDate = datetime.datetime.now()
@@ -52,7 +54,9 @@ for topic in search_topics:
 
 # generate the html
 html = gpt.generate_article_summary_html(article_summaries)
-# write the html to a file
-with open("top_articles.html", "w") as f:
+root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+html_file_path = os.path.join(root_dir, "top_articles.html")
+
+with open(html_file_path, "w") as f:
     f.write(html)
 

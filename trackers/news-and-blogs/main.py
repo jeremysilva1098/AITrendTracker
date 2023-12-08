@@ -1,6 +1,7 @@
 from news import newsApi
 from gpt import freeplayGPT
 import datetime
+import os
 
 gpt = freeplayGPT()
 
@@ -33,7 +34,11 @@ if __name__ == "__main__":
         articleSet.append(summary)
 
     html = gpt.gen_html(type='news', article_summaries=articleSet)
-    with open("news.html", "w") as f:
+
+    root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    html_file_path = os.path.join(root_dir, "news.html")
+
+    with open(html_file_path, "w") as f:
         f.write(html)
     
     '''Find and create blog summaries'''
@@ -60,5 +65,9 @@ if __name__ == "__main__":
         postSet.append(summary)
     
     html = gpt.gen_html(type='blog', article_summaries=postSet)
-    with open("blog.html", "w") as f:
+
+    root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    html_file_path = os.path.join(root_dir, "blog.html")
+
+    with open(html_file_path, "w") as f:
         f.write(html)
