@@ -13,14 +13,11 @@ from dotenv import load_dotenv
 dotenv_dir = f"{par_dir}/.env"
 print("Reading .env variables from: ", dotenv_dir)
 load_dotenv(dotenv_path=dotenv_dir)'''
-print("Env variables:")
-print(os.environ)
 
 
 class newsApi:
     def __init__(self) -> None:
         self.news_key = os.getenv("NEWS_API_KEY")
-        print("News key: ", self.news_key)
         self.news_url = "https://newsapi.org/v2/everything"
     
 
@@ -50,7 +47,9 @@ class newsApi:
             "Authorization": f"Bearer {self.news_key}"
         }
         response = requests.get(self.news_url, params=params, headers=headers)
-        assert response.status_code == 200
+        if response.status_code != 200:
+            print("Status code: ", response.status_code)
+            raise Exception(f"An error occurred: {response.content}")
         # get the JSON
         res = json.loads(response.content)
         # create output
