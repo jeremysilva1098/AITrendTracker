@@ -6,17 +6,21 @@ from data_models import Article
 import pathlib
 from typing import List, Optional
 from langchain.document_loaders import UnstructuredURLLoader, SeleniumURLLoader
+from dotenv import load_dotenv
 
 # load in the env variables
 '''par_dir = pathlib.Path(__file__).parent.parent
 dotenv_dir = f"{par_dir}/.env"
 print("Reading .env variables from: ", dotenv_dir)
 load_dotenv(dotenv_path=dotenv_dir)'''
+print("Env variables:")
+print(os.environ)
 
 
 class newsApi:
     def __init__(self) -> None:
         self.news_key = os.getenv("NEWS_API_KEY")
+        print("News key: ", self.news_key)
         self.news_url = "https://newsapi.org/v2/everything"
     
 
