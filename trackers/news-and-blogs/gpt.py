@@ -2,7 +2,7 @@ from freeplay import Freeplay
 from freeplay.provider_config import ProviderConfig, OpenAIConfig
 import os
 import pathlib
-from data_models import NewsArticle, NewsArticleSummary
+from data_models import Article, ArticleSummary
 from typing import List, Optional
 from dotenv import load_dotenv
 import json
@@ -33,8 +33,8 @@ class freeplayGPT:
         )
     
 
-    def select_best_stories(self, articles: List[NewsArticle],
-                             num_articles: int = 3, max_tokens: int = 16000) -> List[NewsArticle]:
+    def select_best_stories(self, articles: List[Article],
+                             num_articles: int = 3, max_tokens: int = 16000) -> List[Article]:
         # make sure content is under 16000
         num_tokens = 0
         article_subset = []
@@ -59,14 +59,48 @@ class freeplayGPT:
                 resSet.append(artilce)
         return resSet
     
-    
-    def summarize_story(self, article: NewsArticle) -> NewsArticleSummary:
+
+    def select_best_blog_posts(self, articles: List[Article],
+                                num_articles: int = 3, max_tokens: int = 16000) -> List[Article]:
+        # make sure content is under 16000
+        num_tokens = 0
+        article_subset = []
+        for article in articles:
+            num_tokens += len(article.content) / 4
+            if num_tokens < max_tokens * 0.8:
+                article_subset.append(article)
+            else:
+                break
         result = self.freeplay_client.get_completion(
             project_id=self.freeplay_project_id,
-            template_name="summarize_news_story",
+            template_name="select_best_blog_posts",
+            variables={'number_of_articles': str(num_articles),
+                       'articles': str(article_subset)}
+        )
+        # get the response
+        titles = result.content
+        # create output
+        resSet = []
+        for artilce in article_subset:
+            if artilce.title in titles:
+                resSet.append(artilce)
+        return resSet
+    
+    
+    def summarize_story(self, type: str, article: Article) -> ArticleSummary:
+        if type == 'news':
+            temp_name = "summarize_news_story"
+        elif type == 'blog':
+            temp_name = "summarize_blog_post"
+        else:
+            raise ValueError("Type must be either 'news' or 'blog'")
+        
+        result = self.freeplay_client.get_completion(
+            project_id=self.freeplay_project_id,
+            template_name=temp_name,
             variables={'article': str(article)}
         )
-        return NewsArticleSummary(
+        return ArticleSummary(
             title=article.title,
             summary=result.content,
             url=article.url,
@@ -74,10 +108,16 @@ class freeplayGPT:
         )
     
 
-    def gen_html(self, article_summaries: List[NewsArticleSummary]) -> str:
+    def gen_html(self, type: str, article_summaries: List[ArticleSummary]) -> str:
+        if type == 'news':
+            temp_name = "gen_news_html"
+        elif type == 'blog':
+            temp_name = "gen_blogs_html"
+        else:
+            raise ValueError("Type must be either 'news' or 'blog'")
         result = self.freeplay_client.get_completion(
             project_id=self.freeplay_project_id,
-            template_name="gen_news_html",
+            template_name=temp_name,
             variables={'article_summaries': str(article_summaries)}
         )
         return result.content

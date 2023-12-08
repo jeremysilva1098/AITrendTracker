@@ -2,7 +2,7 @@ import requests
 import json
 from dotenv import load_dotenv
 import os
-from data_models import NewsArticle
+from data_models import Article
 import pathlib
 from typing import List, Optional
 from langchain.document_loaders import UnstructuredURLLoader, SeleniumURLLoader
@@ -32,7 +32,7 @@ class newsApi:
 
     def search_keywords(self, keywords: str, num_results: int = 10,
                         minDate: Optional[str] = None,
-                        maxDate: Optional[str] = None) -> List[NewsArticle]:
+                        maxDate: Optional[str] = None) -> List[Article]:
         params = {
             "q": keywords,
             "from": minDate,
@@ -59,7 +59,7 @@ class newsApi:
             content = self.get_url_content(url)
             # make sure there is content
             if len(content) > 500:
-                resSet.append(NewsArticle(
+                resSet.append(Article(
                     title=title,
                     source=source,
                     description=description,

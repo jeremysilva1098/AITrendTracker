@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class NewsArticle(BaseModel):
+class Article(BaseModel):
     title: str
     source: str
     description: str
@@ -8,7 +8,7 @@ class NewsArticle(BaseModel):
     content: str
 
 
-class NewsArticleSummary(BaseModel):
+class ArticleSummary(BaseModel):
     title: str
     summary: str
     url: str
