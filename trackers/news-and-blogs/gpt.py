@@ -8,10 +8,11 @@ from dotenv import load_dotenv
 import json
 
 # load in the env variables
-par_dir = pathlib.Path(__file__).parent.parent
+'''par_dir = pathlib.Path(__file__).parent.parent
 dotenv_dir = f"{par_dir}/.env"
 print("Reading .env variables from: ", dotenv_dir)
-load_dotenv(dotenv_path=dotenv_dir)
+load_dotenv(dotenv_path=dotenv_dir)'''
+load_dotenv()
 
 
 class freeplayGPT:
