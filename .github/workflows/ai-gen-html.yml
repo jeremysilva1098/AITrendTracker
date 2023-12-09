@@ -32,15 +32,15 @@ jobs:
       run: |
         python3 trackers/research/main.py
     
-    #- name: Generate News and Blogs HTML
-      #env:
-        #OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        #FREEPLAY_KEY: ${{ secrets.FREEPLAY_KEY }}
-        #FREEPLAY_PROJECT_ID: ${{ secrets.FREEPLAY_PROJECT_ID }}
-        #FREEPLAY_SUB_DOMAIN: ${{ secrets.FREEPLAY_SUB_DOMAIN }}
-        #NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
-      #run: |
-        #python3 trackers/news-and-blogs/main.py
+    - name: Generate News and Blogs HTML
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        FREEPLAY_KEY: ${{ secrets.FREEPLAY_KEY }}
+        FREEPLAY_PROJECT_ID: ${{ secrets.FREEPLAY_PROJECT_ID }}
+        FREEPLAY_SUB_DOMAIN: ${{ secrets.FREEPLAY_SUB_DOMAIN }}
+        NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+      run: |
+        python3 trackers/news-and-blogs/main.py
 
     - name: Commit and Push
       run: |
@@ -48,7 +48,6 @@ jobs:
         git config --global user.email 'jsilva1098@gmail.com'
         git add .
         git commit -m 'Update HTML files'
-        #git push https://${{ secrets.GH_PAT }}@github.com/jeremysilva1098/AITrendTracker.git
         git push
 
     - name: Deploy to GitHub Pages
