@@ -37,6 +37,17 @@ if __name__ == "__main__":
 
     root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     html_file_path = os.path.join(root_dir, "news.html")
+    # add font matter to the html
+    font_matter = '''---
+    layout: default
+    ---
+    <style>
+        body {
+            zoom: 125%; /* Adjust the zoom level as per your requirement */
+        }
+    </style>
+    '''
+    html = font_matter + html
 
     with open(html_file_path, "w") as f:
         f.write(html)
@@ -69,5 +80,8 @@ if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     html_file_path = os.path.join(root_dir, "blog.html")
 
+    # add font matter to the html
+    html = font_matter + html
+    
     with open(html_file_path, "w") as f:
         f.write(html)

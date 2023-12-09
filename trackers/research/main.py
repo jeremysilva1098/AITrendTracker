@@ -54,9 +54,21 @@ for topic in search_topics:
 
 # generate the html
 html = gpt.generate_article_summary_html(article_summaries)
+
 root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 html_file_path = os.path.join(root_dir, "top_articles.html")
 
+# add font matter to the html
+html_content = '''---
+layout: default
+---
+<style>
+    body {
+        zoom: 125%; /* Adjust the zoom level as per your requirement */
+    }
+</style>
+''' + html
+
 with open(html_file_path, "w") as f:
-    f.write(html)
+    f.write(html_content)
 
