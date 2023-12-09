@@ -6,3 +6,5 @@ An AI powered trend tracker that curates and summarizes the latest research, new
 All content curation and summarization is done via LLM. Even the HTML is entirely AI generated!
 
 Prompt management, evaluation, and paramater optimization orchestrated via [freeplay.ai](https://freeplay.ai/)!
+
+Implementation details on AI components found in [trackers](trackers/) folders
