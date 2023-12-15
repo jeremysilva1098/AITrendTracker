@@ -38,7 +38,7 @@ if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     html_file_path = os.path.join(root_dir, "news.html")
     # add font matter to the html
-    font_matter = '''---
+    html_content = '''---
     layout: default
     ---
     <style>
@@ -46,11 +46,10 @@ if __name__ == "__main__":
             zoom: 125%; /* Adjust the zoom level as per your requirement */
         }
     </style>
-    '''
-    html = font_matter + html
+    ''' + html
 
     with open(html_file_path, "w") as f:
-        f.write(html)
+        f.write(html_content)
     
     '''Find and create blog summaries'''
     blog_topics = ["LLM Blog Post", "Creating LLM Apps Blog Post",
@@ -81,7 +80,15 @@ if __name__ == "__main__":
     html_file_path = os.path.join(root_dir, "blog.html")
 
     # add font matter to the html
-    html = font_matter + html
+    html_content = '''---
+    layout: default
+    ---
+    <style>
+        body {
+            zoom: 125%; /* Adjust the zoom level as per your requirement */
+        }
+    </style>
+    ''' + html
     
     with open(html_file_path, "w") as f:
-        f.write(html)
+        f.write(html_content)
