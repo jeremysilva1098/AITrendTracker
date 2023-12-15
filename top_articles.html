@@ -13,26 +13,71 @@ layout: default
 </head>
 <body>
 <h1>Top Research Articles of the Week</h1>
-<h2>Efficiently Programming Large Language Models using SGLang</h2>
+<h2>Title: Efficiently Programming Large Language Models using SGLang</h2>
 <h3>Summary:</h3>
 <ul>
-<li>In this paper, the authors introduce SGLang, a domain-specific language for efficiently programming large language models (LLMs).</li>
-<li>SGLang incorporates primitives for common LLM programming patterns and enables optimizations such as parallelism, batching, caching, and sharing.</li>
-<li>The authors also propose RadixAttention, a technique for automatic key-value (KV) cache reuse across multiple generation calls at runtime.</li>
-<li>The experiments show that SGLang can speed up common LLM tasks by up to 5x while reducing code complexity and enhancing control.</li>
+<li>In the paper "Efficiently Programming Large Language Models using SGLang," the authors introduce SGLang, a domain-specific language for programming large language models (LLMs) efficiently.</li>
+<li>SGLang is designed to simplify the programming of LLMs and incorporates primitives for common LLM programming patterns such as prompt manipulation, generation calls, parallelism, control flow, and external calls.</li>
+<li>SGLang includes an interpreter, a compiler, and a high-performance runtime that work together to enable optimizations such as parallelism, batching, caching, sharing, and other compilation techniques.</li>
+<li>The paper introduces RadixAttention, a novel technique that maintains a Least Recently Used (LRU) cache of the Key-Value (KV) cache for all requests in a radix tree, enabling automatic KV cache reuse across multiple generation calls at runtime. This technique improves runtime efficiency and reduces redundant computation.</li>
+<li>Experimental results show that SGLang can speed up common LLM tasks by up to 5×, while reducing code complexity and enhancing control.</li>
+<li>SGLang is compared against other LLM programming systems such as LMQL and Guidance, and it outperforms them in terms of runtime efficiency and productivity.</li>
+<li>Overall, SGLang provides a powerful and efficient programming framework for LLMs, enabling AI engineers to write complex LLM programs more easily and achieve better performance. The integration of RadixAttention further enhances the runtime efficiency of LLM applications.</li>
 </ul>
-<h3>Link:</h3>
-<a href="http://arxiv.org/pdf/2312.07104v1">http://arxiv.org/pdf/2312.07104v1</a>
-<h2>Context Tuning for Retrieval Augmented Generation</h2>
+<a href="http://arxiv.org/pdf/2312.07104v1">Link</a>
+
+<h2>Title: LLF-Bench: Benchmark for Interactive Learning from Language Feedback</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper introduces Context Tuning for Retrieval Augmented Generation (RAG), which improves tool retrieval and plan generation in large language models (LLMs).</li>
-<li>Context Tuning uses a smart context retrieval system to fetch relevant information using numerical, categorical, and habitual usage signals.</li>
-<li>Empirical results show that Context Tuning significantly enhances semantic search, achieving a 3.5-fold and 1.5-fold improvement in Recall@K for context retrieval and tool retrieval tasks respectively.</li>
-<li>The proposed lightweight model using Reciprocal Rank Fusion (RRF) with LambdaMART outperforms GPT-4 based retrieval.</li>
-<li>Context augmentation at plan generation reduces hallucination in LLM-based planners.</li>
+<li>LLF-Bench is a new benchmark designed to evaluate AI agents' ability to learn from natural language feedback and instructions. It includes a collection of sequential decision-making tasks such as user recommendation, poem writing, navigation, and robot control.</li>
+<li>The benchmark provides a unified OpenAI Gym interface for all tasks and allows users to configure the information conveyed by the feedback (e.g., suggestion, explanation, instantaneous performance) to study how agents respond to different types of feedback.</li>
+<li>LLF-Bench implements randomization techniques (paraphrasing and environment randomization) to ensure that the tasks are unfamiliar to the agent and that the agent is robust to various verbalizations.</li>
+<li>LLF-Bench can be used to develop and test AI agents that learn from natural language feedback, providing a unique research platform for studying interactive learning with language feedback.</li>
 </ul>
-<h3>Link:</h3>
-<a href="http://arxiv.org/pdf/2312.05708v1">http://arxiv.org/pdf/2312.05708v1</a>
+<a href="http://arxiv.org/pdf/2312.06853v2">Link</a>
+
+<h2>Title: Helping Language Models Learn More: Multi-dimensional Task Prompt for Few-shot Tuning</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The paper proposes MTPrompt, a method for improving the performance of large language models (LLMs) in few-shot learning tasks.</li>
+<li>MTPrompt uses task-related object, summary, and task description information to generate multi-dimensional task prompts.</li>
+<li>The results show that MTPrompt achieves better performance in sentiment classification, question classification, and natural language inference tasks compared to other baselines.</li>
+<li>The experiments also demonstrate the stability and portability of MTPrompt under different experimental settings and the same task.</li>
+<li>The study highlights the importance of prompt design in utilizing the knowledge embedded in LLMs and suggests further exploration of prompt optimization and computational methods for finding suitable prompts.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2312.08027v1">Link</a>
+
+<h2>Title: Context Tuning for Retrieval Augmented Generation</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The paper introduces Context Tuning for Retrieval Augmented Generation (RAG), a method that enhances the tool retrieval and plan generation steps in large language models (LLMs) by incorporating contextual understanding.</li>
+<li>Traditional RAG methods rely on semantic search for tool retrieval, but this approach can fail when queries lack specificity or context. Context Tuning addresses this limitation by employing a smart context retrieval system that uses numerical, categorical, and habitual usage signals to retrieve and rank context items.</li>
+<li>Empirical results show that Context Tuning significantly improves semantic search, achieving a 3.5-fold improvement in Recall@K for context retrieval and a 1.5-fold improvement in tool retrieval. It also leads to an 11.6% increase in LLM-based planner accuracy and reduces hallucination in plan generation.</li>
+<li>The proposed lightweight model using Reciprocal Rank Fusion (RRF) with LambdaMART outperforms a GPT-4-based retrieval system.</li>
+<li>Context augmentation at plan generation, even after tool retrieval, further reduces hallucination.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2312.05708v1">Link</a>
+
+<h2>Title: PILLOW: Enhancing Efficient Instruction Fine-tuning via Prompt Matching</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The paper presents PILLOW, a framework that enhances instruction fine-tuning of Large Language Models (LLMs) using Low-Rank Adaptation (LoRA) and in-context learning (ICL).</li>
+<li>PILLOW incorporates a matching network that selects prompts from a user-defined prompt pool and performs inference using the LoRA-fine-tuned LLMs.</li>
+<li>Trained with Reinforcement Learning, PILLOW achieves comparable performance to typical instruction fine-tuning methods while using only consumer-grade GPU resources and reducing computational costs.</li>
+<li>Experimental results show that PILLOW outperforms LoRA on various evaluation metrics and achieves performance close to supervised fine-tuning (SFT) on large-scale LLMs.</li>
+<li>The proposed framework is resource-efficient and widely applicable, making it suitable for deployment by individuals or small-scale entities.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2312.05621v1">Link</a>
+
+<h2>Title: Leveraging Large Language Models to Build and Execute Computational Workflows</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The paper explores how large language models (LLMs) and natural language processing can be used to automate the generation and execution of code in scientific computing workflows.</li>
+<li>LLMs like ChatGPT can generate code snippets in response to user prompts, assisting with coding tasks and even writing complete programs.</li>
+<li>Code execution can be achieved using tools like LangChain, function calling APIs, Toolformer, and code interpreters. These methods allow LLMs to write and execute code, call functions, and process the output.</li>
+<li>The paper presents preliminary results of integrating Phyloflow with OpenAI's function-calling API to streamline the creation and execution of computational tasks.</li>
+<li>The authors propose a next-generation workflow management system that uses natural language interfaces to describe and execute complex computational pipelines. The system would include a planner, executor, and debugger to handle task execution and error handling.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2312.07711v1">Link</a>
 </body>
 </html>
