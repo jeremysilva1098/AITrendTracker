@@ -11,6 +11,15 @@ num_results = 10
 maxDate = datetime.datetime.now()
 minDate = maxDate - datetime.timedelta(days=7)
 
+font_matter = '''---
+layout: default
+---
+<style>
+    body {
+        zoom: 125%; /* Adjust the zoom level as per your requirement */
+    }
+</style>
+'''
 
 if __name__ == "__main__":
     '''Find and create news summaries'''
@@ -38,15 +47,7 @@ if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     html_file_path = os.path.join(root_dir, "news.html")
     # add font matter to the html
-    html_content = '''---
-    layout: default
-    ---
-    <style>
-        body {
-            zoom: 125%; /* Adjust the zoom level as per your requirement */
-        }
-    </style>
-    ''' + html
+    html_content = font_matter + html
 
     with open(html_file_path, "w") as f:
         f.write(html_content)
@@ -80,15 +81,7 @@ if __name__ == "__main__":
     html_file_path = os.path.join(root_dir, "blog.html")
 
     # add font matter to the html
-    html_content = '''---
-    layout: default
-    ---
-    <style>
-        body {
-            zoom: 125%; /* Adjust the zoom level as per your requirement */
-        }
-    </style>
-    ''' + html
+    html_content = font_matter + html
     
     with open(html_file_path, "w") as f:
         f.write(html_content)
