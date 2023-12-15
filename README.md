@@ -7,4 +7,6 @@ All content curation and summarization is done via LLM. Even the HTML is entirel
 
 Prompt management, evaluation, and paramater optimization orchestrated via [freeplay.ai](https://freeplay.ai/)!
 
+[freelay details here](/freeplay_samp_imgs/DEMO_OVERVIEW.md)
+
 Implementation details on AI components found in [trackers](trackers/) folders
