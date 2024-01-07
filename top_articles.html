@@ -13,99 +13,72 @@ layout: default
 </head>
 <body>
 <h1>Top Research Articles of the Week</h1>
-<h2>Title: Task Contamination: Language Models May Not Be Few-Shot Anymore</h2>
+<h2>Title: State of What Art? A Call for Multi-Prompt LLM Evaluation</h2>
 <h3>Summary:</h3>
 <ul>
-<li>Language models (LLMs) can exhibit inflated performance in zero-shot and few-shot tasks due to task contamination, where the model has been exposed to the task during pre-training.</li>
-<li>The performance of LLMs on datasets released prior to their training data creation date is significantly better than on datasets released after, indicating the presence of task contamination.</li>
-<li>LLMs rarely show statistically significant improvements over simple majority baselines in classification tasks without task contamination.</li>
-<li>Training data inspection and task example extraction methods have low recall in detecting task contamination, highlighting the difficulty in identifying contaminated data.</li>
-<li>The increase in performance of LLMs over time is likely due to task contamination.</li>
-<li>Membership inference attacks can reveal the extent of task contamination in LLMs, with a strong correlation between the number of exact matched generated examples and accuracy.</li>
-<li>Caution should be exercised when using closed-sourced LLMs as baselines in zero-shot and few-shot evaluation, especially those with instruction fine-tuning or reinforcement learning with human feedback.</li>
+<li>The performance of large language models (LLMs) can vary significantly depending on the specific instruction template used for evaluation.</li>
+<li>Evaluating LLMs using a single instruction template can lead to inconsistent and unreliable results.</li>
+<li>Different use cases require different evaluation metrics, such as maximum performance for specific downstream applications, average performance for LLM developers, saturation to measure adaptability, and a combined performance score.</li>
+<li>OpenAI models are also sensitive to prompt paraphrasing, with performance differences observed between original prompts and paraphrases.</li>
+<li>Alternative evaluation metrics that consider a diverse set of instruction templates provide more robust and meaningful assessment of LLM capabilities.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2312.16337v1">Link</a>
+<a href="http://arxiv.org/pdf/2401.00595v1">Link</a>
 
-<h2>Title: Large Language Models as Traffic Signal Control Agents: Capacity and Opportunity</h2>
+<h2>Title: Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper introduces LLMLight, a framework that uses large language models (LLMs) for traffic signal control tasks.</li>
-<li>LLMLight leverages the generalization and zero-shot reasoning capabilities of LLMs to make human-like decisions for efficient traffic management.</li>
-<li>LLMLight achieves state-of-the-art or competitive results across five real-world traffic datasets, showcasing its generalization, interpretability, and zero-shot reasoning abilities.</li>
-<li>The experiments show that RL-based models struggle with limited generalization ability and lack interpretability, while LLMLight consistently performs well without any training for transportation management tasks.</li>
-<li>The paper suggests future research directions in integrating LLMs with RL-based methods, multi-intersection traffic signal control, and developing LLMs with domain-specific expertise in traffic management.</li>
+<li>In this paper, the authors propose a fine-tuning method called Self-Play fine-tuning (SPIN) to improve the performance of weak Language Models (LLMs) without the need for additional human-annotated data.</li>
+<li>The method leverages a self-play mechanism, where the LLM refines its capability by playing against instances of itself.</li>
+<li>The authors prove that the global optimum of their training objective is achieved when the LLM policy aligns with the target data distribution.</li>
+<li>Empirical results show that SPIN significantly improves the LLM's performance across multiple benchmark datasets and even outperforms models trained with additional preference data.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2312.16044v1">Link</a>
+<a href="http://arxiv.org/pdf/2401.01335v1">Link</a>
 
-<h2>Title: Harnessing Pre-trained Generalist Agents for Software Engineering Tasks</h2>
+<h2>Title: State of What Art? A Call for Multi-Prompt LLM Evaluation</h2>
 <h3>Summary:</h3>
 <ul>
-<li>Bug Detection in Blockmaze Game:
-We fine-tuned the pre-trained generalist agents on the Blockmaze game and evaluated their performance in terms of bug detection. The results are shown in Table 6. The baseline agent detected an average of 1.8 bugs of Type 1 and 2 bugs of Type 2. Among the fine-tuned generalist agents, the MGDT-MAENT configuration detected an average of 1 bug of Type 2, while the MGDT-DQN configuration detected an average of 5 bugs of Type 1 and 5 bugs of Type 2. The MGDT-PPO configuration did not detect any bugs. Overall, the fine-tuned generalist agents showed comparable or better bug detection performance than the baseline agent.
-
-Bug Detection in MsPacman Game:
-We also fine-tuned the pre-trained generalist agents on the MsPacman game and evaluated their bug detection performance. The results are shown in Table 7. The baseline agent detected an average of 772 bugs of Type 1, 689 bugs of Type 2, 675 bugs of Type 3, and 689 bugs of Type 4. Among the fine-tuned generalist agents, the MGDT-MAENT configuration detected an average of 200 bugs of Type 3 and 59 bugs of Type 4, while the MGDT-DQN configuration detected an average of 20 bugs of Type 3 and 11 bugs of Type 4. The MGDT-PPO configuration did not detect any bugs. Overall, the fine-tuned generalist agents showed comparable or better bug detection performance than the baseline agent.
-
-Makespan in PDR-based Scheduling:
-For the PDR-based scheduling task, we fine-tuned the pre-trained generalist agents and evaluated their performance in terms of makespan. The results are shown in Table 8. The baseline agent achieved a makespan of 573 for the (6x6) instance and 2480 for the (30x20) instance. Among the fine-tuned generalist agents, the MGDT-MAENT configuration achieved a makespan of 391 for the (6x6) instance and 2019 for the (30x20) instance, while the MGDT-DQN configuration achieved a makespan of 392 for the (6x6) instance and 2012 for the (30x20) instance. The MGDT-PPO configuration achieved a makespan of 200 for the (30x20) instance. The IMPALA-V TRACE and IMPALA-PPO configurations achieved makespans of 201 and 182 for the (6x6) instance respectively. Overall, the fine-tuned generalist agents showed comparable or better makespan performance than the baseline agent.
-
-Cumulative Reward, Training Time, and Testing Time:
-We also evaluated the fine-tuned generalist agents in terms of cumulative reward, training time, and testing time. The results are shown in Tables 9, 10, and 11.
-
-For the MsPacman game, the baseline agent achieved an average cumulative reward of 8140. Among the fine-tuned generalist agents, the MGDT-MAENT configuration achieved an average cumulative reward of 200, the MGDT-DQN configuration achieved an average cumulative reward of 150, and the MGDT-PPO configuration achieved an average cumulative reward of 45. For the Blockmaze game, the baseline agent achieved an average cumulative reward of 43200. Among the fine-tuned generalist agents, the MGDT-MAENT configuration achieved an average cumulative reward of -297, the MGDT-DQN configuration achieved an average cumulative reward of -149,</li>
+<li>The evaluation of large language models (LLMs) using a single instruction template is unreliable and leads to inconsistent results.</li>
+<li>Model performance varies widely on different instruction templates, both in terms of absolute performance and relative model ranking.</li>
+<li>Different use cases require different evaluation metrics. For LLM developers, average performance across multiple instruction templates is important for assessing model robustness. For developers interested in specific downstream tasks, maximum performance on a single instruction template is crucial.</li>
+<li>The saturation metric measures how close a model's best performance on a task is to its average performance, indicating versatility and adaptability to diverse instructions.</li>
+<li>When evaluating LLMs, it is important to consider a diverse set of instruction templates to obtain a more reliable and meaningful assessment of model capabilities.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2312.15536v1">Link</a>
+<a href="http://arxiv.org/pdf/2401.00595v1">Link</a>
 
-<h2>Title: A Prompt Learning Framework for Source Code Summarization</h2>
+<h2>Title: Concurrent Brainstorming & Hypothesis Satisfying: An Iterative Framework for Enhanced Retrieval-Augmented Generation (R2CBR3H-SR)</h2>
 <h3>Summary:</h3>
 <ul>
-<li>RQ4: Influence of training data size on PromptCS.
-To investigate the impact of training data size on PromptCS, we conduct experiments using different proportions of the training set for training. Specifically, we randomly select 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, and 90% of the training set and use them to train PromptCS. The remaining 10% of the training set is used as the validation set. We use StarCoderBase-1B as the base LLM. Table 7 presents the experimental results.
-From Table 7, it can be observed that as the size of the training data increases, the performance of PromptCS generally improves. This is consistent across all four evaluation metrics. However, the improvement becomes less significant as the training data size increases. For example, when using 10% of the training data, the BLEU score is 19.33, and when using 90% of the training data, the BLEU score is 19.62. The difference in BLEU scores between 10% and 90% is less than 0.3. This suggests that PromptCS can achieve good performance even with a relatively small amount of training data.
-Summary: Increasing the size of the training data generally improves the performance of PromptCS. However, the improvement becomes less significant as the training data size increases. PromptCS can achieve good performance even with a relatively small amount of training data.</li>
-<li>RQ5: Performance of PromptCS on code summarization tasks in other programming languages.
-To evaluate the performance of PromptCS on code summarization tasks in other programming languages, we conduct experiments on three additional languages from the CSN corpus: Go, JavaScript, and PHP. We use the same experimental settings as before and report the results in Table 8.
-From Table 8, it can be observed that PromptCS performs well on code summarization tasks in other programming languages. It achieves competitive results compared to the baselines in terms of all four evaluation metrics. This demonstrates the effectiveness and generalizability of PromptCS across different programming languages.
-Summary: PromptCS performs well on code summarization tasks in other programming languages, achieving competitive results compared to the baselines. This demonstrates the effectiveness and generalizability of PromptCS across different programming languages.</li>
-<li>RQ6: Performance of PromptCS in human evaluation.
-To evaluate the quality of the summaries generated by PromptCS, we conduct a human evaluation. We randomly select 100 code snippets from the CSN-Java dataset and generate summaries using PromptCS. We also generate summaries using the task-oriented fine-tuning scheme as a baseline for comparison. We then ask human evaluators, who are AI engineers, to rate the quality of the summaries on a scale from 1 to 5, with 1 being the lowest and 5 being the highest. We collect ratings for both PromptCS and the baseline, and calculate the average ratings for each. The results are shown in Table 9.
-From Table 9, it can be observed that PromptCS outperforms the baseline in terms of human evaluation. The average ratings for PromptCS are higher than the average ratings for the baseline, indicating that the summaries generated by PromptCS are of higher quality. This further validates the effectiveness of PromptCS in generating high-quality code summaries.
-Summary: PromptCS generates higher-quality code summaries compared to the task-oriented fine-tuning scheme, as indicated by the results of human evaluation.</li>
+<li>The paper presents a novel iterative retrieval-augmented generation system that combines vector-space re-ranking with concurrent brainstorming to improve information retrieval and query generation.</li>
+<li>The system includes a hybrid hypothesize-satisfying step that formulates hypotheses and evaluates the satisfaction level of the response, shortening the feedback loop and providing accurate information.</li>
+<li>The system produces a concise representation of the content by distilling the retrieved data into its most salient points, maximizing conceptual density with minimal verbosity.</li>
+<li>Experimental results show that the proposed method outperforms a baseline approach in terms of cost and time efficiency in addressing user information needs.</li>
+<li>The system's performance benefits from the concurrency in brainstorming and the hybrid approach in hypothesis-satisfying, offering promise for future applications in intelligent information retrieval systems.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2312.16066v1">Link</a>
+<a href="http://arxiv.org/pdf/2401.01835v1">Link</a>
 
-<h2>Title: Making Large Language Models A Better Foundation For Dense Retrieval</h2>
+<h2>Title: Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper proposes LLaRA, a post-hoc adaptation of large language models (LLMs) for dense retrieval tasks.</li>
-<li>LLaRA consists of two pretext tasks, EBAE and EBAR, which aim to enhance LLMs' text embeddings to represent the global context and facilitate the association between query and document.</li>
-<li>LLaRA significantly improves the retrieval performance of LLMs on various benchmarks, outperforming other baseline methods.</li>
-<li>The adaptation process of LLaRA is simple, lightweight, and efficient, and it does not require labeled data.</li>
-<li>LLaRA shows great potential in dense retrieval applications, offering improved retrieval accuracy and generality.</li>
+<li>The paper introduces a new fine-tuning method called SPIN (Self-Play fine-tuning) for improving the performance of language models.</li>
+<li>SPIN leverages a self-play mechanism, where the model plays against itself to refine its capabilities.</li>
+<li>It starts from a supervised fine-tuned model and generates its own training data from previous iterations.</li>
+<li>The method progressively improves the model's performance without the need for additional human-annotated data.</li>
+<li>The results show that SPIN significantly improves the performance of the model across various benchmarks, outperforming models trained with additional data.</li>
+<li>The paper also compares SPIN with direct preference optimization (DPO) and shows that SPIN achieves comparable performance to DPO even without the need for new data sources.</li>
+<li>Theoretical analysis proves that SPIN converges to the optimal solution when the model's distribution aligns with the target data distribution.</li>
+<li>Overall, SPIN is an effective method for enhancing the performance of language models through self-play and leveraging existing data. It eliminates the need for additional resources and achieves competitive results.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2312.15503v1">Link</a>
+<a href="http://arxiv.org/pdf/2401.01335v1">Link</a>
 
-<h2>Title: RepairLLaMA: Efficient Representations and Fine-Tuned Adapters for Program Repair</h2>
+<h2>Title: If LLM Is the Wizard, Then Code Is the Wand: A Survey on How Code Empowers Large Language Models to Serve as Intelligent Agents</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper presents a novel program repair approach called RepairLLaMA, which combines code representations and parameter-efficient fine-tuning to fix bugs using large language models (LLMs).</li>
-<li>The experiments show that RepairLLaMA outperforms baselines and achieves state-of-the-art results on two benchmarks, correctly fixing 125 Defects4J bugs and 82 HumanEval-Java bugs.</li>
-<li>Fine-tuning LLMs with program repair specific code representations improves repair effectiveness.</li>
-<li>Parameter-efficient fine-tuning is more effective than full-parameter fine-tuning for program repair.</li>
-<li>RepairLLaMA generates fewer candidate patches, making it more efficient to evaluate plausibility and correctness.</li>
+<li>The paper discusses the benefits of integrating code into large language models (LLMs) during training.</li>
+<li>It highlights how code training enhances LLMs in various ways, including strengthening their programming skills, empowering complex reasoning, and enabling them to capture structured knowledge.</li>
+<li>The paper also explores how code-empowered LLMs can serve as intelligent agents, improving decision-making, execution, and self-improvement.</li>
+<li>However, the paper acknowledges the need for more research to understand the causal relationship between code training and reasoning enhancement in LLMs.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2312.15698v1">Link</a>
-
-<h2>Title: Making Large Language Models A Better Foundation For Dense Retrieval</h2>
-<h3>Summary:</h3>
-<ul>
-<li>The paper introduces LLaRA, a novel approach for adapting large language models (LLMs) for dense retrieval tasks.</li>
-<li>LLaRA consists of two pretext tasks: EBAE (Embedding-Based Auto-Encoding) and EBAR (Embedding-Based Auto-Regression), which aim to adapt LLMs to generate text embeddings that capture the global semantic context.</li>
-<li>LLaRA substantially improves the retrieval performance of LLMs on benchmark datasets like MSMARCO and BEIR.</li>
-<li>The adaptation process of LLaRA is simple, lightweight, and efficient, and it can be directly applied on top of existing pretraining pipelines.</li>
-<li>LLaRA outperforms other baseline methods, including BERT-based retrievers, in terms of retrieval accuracy and generality across different scenarios.</li>
-</ul>
-<a href="http://arxiv.org/pdf/2312.15503v1">Link</a>
+<a href="http://arxiv.org/pdf/2401.00812v1">Link</a>
 
 </body>
 </html>
