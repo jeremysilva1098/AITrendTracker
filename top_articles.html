@@ -13,96 +13,60 @@ layout: default
 </head>
 <body>
 <h1>Top Research Articles of the Week</h1>
-<h2>Title: InFoBench: Evaluating Instruction Following Ability in Large Language Models</h2>
+<h2>Title: Leeroo Orchestrator: Elevating LLMs Performance Through Model Integration</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper introduces a new metric called DRFR to evaluate the ability of Large Language Models (LLMs) to follow instructions. DRFR breaks down complex instructions into simpler criteria, allowing for a more detailed assessment of LLMs' compliance with various aspects of tasks.</li>
-<li>The paper also presents INFOBENCH, a benchmark dataset consisting of 500 diverse instructions and 2,250 decomposed questions across multiple constraint categories. The dataset is designed to test and analyze LLMs' instruction-following capabilities.</li>
-<li>Experiments comparing DRFR with traditional scoring methods show that DRFR has higher reliability and provides more detailed insights into LLM performance. Using GPT-4 as an annotator is found to be a cost-effective and accurate alternative to human experts.</li>
-<li>The evaluation of advanced LLMs using DRFR and INFOBENCH reveals that there is still room for improvement in LLMs' ability to follow instructions, especially in complex scenarios. Areas like numerical and linguistic understanding require focused improvements.</li>
-<li>The paper contributes a novel metric and benchmark dataset, offering insights for future LLM development and evaluation. It also highlights the potential of using GPT-4 for large-scale annotations.</li>
+<li>The paper proposes an architecture called Leeroo Orchestrator to harness the collective knowledge of multiple trained Large Language Models (LLMs) and achieve state-of-the-art performance.</li>
+<li>The Leeroo Orchestrator intelligently selects the most suitable expert model for each input based on predefined criteria such as speed, cost, and accuracy, thus optimizing resource utilization.</li>
+<li>The results show that the Leeroo Orchestrator achieves performance on par with the best open-source LLM models while incurring lower costs. It also outperforms closed-source LLM models with significant cost reductions.</li>
+<li>The architecture utilizes a self-play loop to generate training data for the orchestrator, continuously improving its decision-making and adaptability.</li>
+<li>The paper demonstrates that the Leeroo Orchestrator can create cost-effective LLMs by optimizing the synergy between multiple models, offering superior performance outcomes.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2401.03601v1">Link to Article</a>
+<a href="http://arxiv.org/pdf/2401.13979v1">Link</a>
 
-<h2>Title: Multi-User Chat Assistant (MUCA): a Framework Using LLMs to Facilitate Group Conversations</h2>
+<h2>Title: AI for social science and social science of AI: A Survey</h2>
 <h3>Summary:</h3>
 <ul>
-<li>Case Study 1: Topic-C - Organizing a Book Exchange Event</li>
-<p>Scenario: A group of event organizers is discussing the plan to organize a book exchange event for 20 participants. The organizers need to make decisions on the event venue, finding sponsors, and setting up exchange rules.</p>
-<p>Challenges:</p>
-<li>Uneven Participation: Some participants may dominate the conversation, while others may stay silent.</li>
-<li>Stuck Conversation: The conversation may become stagnant if there are repetitive discussions or unresolved issues.</li>
-<li>Conflict Resolution: Participants may have conflicting opinions on event details.</li>
-<p>MUCA Approach:</p>
-<li>Participation Encouragement: MUCA identifies participants who have been less active and encourages them to participate in the conversation.</li>
-<li>In-context Chime-in: MUCA provides insights and suggestions to advance the discussion when the conversation becomes stuck.</li>
-<li>Conflict Resolution: MUCA offers recommendations and summarizes different viewpoints to help participants reach a consensus.</li>
+<li>Recent advancements in large language models (LLMs) have sparked interest in combining AI and social science.</li>
+<li>AI for social science focuses on using AI as a tool to enhance various stages of social science research, such as literature review and hypothesis generation.</li>
+<li>Social science of AI examines AI agents as social entities with human-like cognitive and linguistic capabilities.</li>
+<li>Large language models can assist in hypothesis generation by providing literature searching and hypothesis proposing capabilities.</li>
+<li>In hypothesis verification, large language models can be used in experiment research and survey research to enhance efficiency and scalability.</li>
 </ul>
+<a href="http://arxiv.org/pdf/2401.11839v1">Link</a>
 
-<ul>
-<li>Case Study 2: Topic-D - Organizing a Hiking Activity</li>
-<p>Scenario: A group of activity organizers is discussing the plan to organize a hiking activity for 50 members in a local hiking club. They need to make decisions on transportation, organizing group sizes and start times, and choosing the difficulty level of the trails.</p>
-<p>Challenges:</p>
-<li>Multi-threaded Discussion: The discussion may involve multiple topics simultaneously, such as transportation, group organization, and trail difficulty.</li>
-<li>Conflicting Viewpoints: Participants may have different preferences for transportation, group organization, and difficulty level.</li>
-<li>Timing Intelligence: MUCA needs to chime in at the right timing to provide relevant insights and suggestions.</li>
-<p>MUCA Approach:</p>
-<li>Sub-topic Transition: MUCA identifies when the discussion on a particular topic has reached a consensus or has become uninteresting, and transitions to a new sub-topic.</li>
-<li>In-context Chime-in: MUCA provides insights and suggestions based on the ongoing discussion, addressing multiple topics and conflicting viewpoints.</li>
-<li>Timing Intelligence: MUCA determines the appropriate timing to chime in and provides relevant information to aid the decision-making process.</li>
-</ul>
-<p>The case studies demonstrate how MUCA effectively addresses the challenges in multi-user group conversations. It encourages balanced participation, advances stuck conversations, resolves conflicts, and provides timely and relevant information. The dialog acts of MUCA, such as participation encouragement, in-context chime-in, and sub-topic transition, enable smooth and productive group discussions.</p>
-<a href="http://arxiv.org/pdf/2401.04883v1">Link to Article</a>
-
-<h2>Title: Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects</h2>
-<h3>Summary:</h3>
-<p>framework for embodied agents that enables the agent to interact with the environment and perform tasks such as visual perception, object manipulation, and navigation. AGiXT [ 58] proposes a universal agent framework that can interact with various real-world systems, including smart homes, industrial control systems, and medical devices. It utilizes a multimodal interface to communicate with these systems and execute tasks. BabyAGI [ 59] focuses on the development of agents that can interact with the physical world, learn from sensory input, and perform tasks such as object recognition and manipulation. LoopGPT [ 60] introduces a framework for training agents to interact with real-world systems by integrating LLMs with external control modules.</p>
-<p>Simulation Environment LLM-based agents can operate in simulated environments, which provide controlled and reproducible conditions for training and testing. Interaction methodologies in simulation environments include:</p>
-<ul>
-<li>Model Manipulation : Modifying the parameters and configurations of simulated models to achieve desired outcomes.</li>
-<li>Data Analysis : Analyzing simulated data to extract patterns, insights, and knowledge for decision-making and learning.</li>
-<li>Optimization : Optimizing simulated systems by adjusting variables and parameters to enhance performance and efficiency.</li>
-</ul>
-<p>PET [ 53] introduces an embodied agent framework that operates in the AlfWorld interactive environment for training agents to perform a variety of tasks. The DEPS [ 134] framework enables LLM-based agents to operate in simulated environments and interact with simulated entities to accomplish tasks. Three-Part System [ 70] proposes a modular coordination approach that uses a simulation environment to train and test LLM-based agents in a 2D partially observable grid-world.</p>
-<p>These environments enable LLM-based agents to interact with different systems and domains, providing opportunities for learning, decision-making, and task execution.</p>
-<h3>Action</h3>
-<p>The action component of an LLM-based agent system comprises the set of actions that the agent can perform in its environment. These actions can be categorized into three main types: tool utilization, message passing, and external method execution.</p>
-<ul>
-<li>Tool Utilization: Tool utilization refers to the agent's ability to use external tools or resources to accomplish tasks. These tools can include calculators, code interpreters, databases, or any other software or hardware resource that provides additional functionality to the agent.</li>
-<li>Message Passing: Message passing involves the exchange of information and communication between LLM-based agents in a multi-agent system. It enables agents to collaborate, coordinate, and share knowledge to accomplish tasks more efficiently.</li>
-<li>External Method Execution: External method execution refers to the ability of an LLM-based agent to execute external methods or algorithms to accomplish tasks that are beyond the capabilities of the agent itself or its LLM.</li>
-</ul>
-<a href="http://arxiv.org/pdf/2401.03428v1">Link to Article</a>
-
-<h2>Title: Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis</h2>
-<h3>Summary:</h3>
-<p>performance and analyze the impact of LLMs on recommendation results based on the classification of LLMs.</p>
-<h4>Comparison with Traditional Models</h4>
-<p>To evaluate the performance of LLMs as recommender systems, we compare them with traditional recommendation models, including Collaborative Filtering (CF), Matrix Factorization (MF), and Neural Collaborative Filtering (NCF).</p>
-<p>The results show that LLMs have the potential to outperform traditional models in recommendation tasks. Open-source LLMs (e.g.,ChatGPT) can achieve competitive performance compared to closed-source LLMs (e.g.,LLaMA) when fine-tuned specifically for recommendation tasks. This suggests that the general knowledge encoded in LLMs is valuable for recommendation tasks, and fine-tuning LLMs can further improve their performance.</p>
-<a href="http://arxiv.org/pdf/2401.04997v1">Link to Article</a>
-
-<h2>Title: Adapting Standard Retrieval Benchmarks to Evaluate Generated Answers</h2>
+<h2>Title: Towards Goal-oriented Large Language Model Prompting: A Survey</h2>
 <h3>Summary:</h3>
 <ul>
-<li>Evaluating the quality and correctness of answers generated by large language models is a challenge that has received relatively little attention.</li>
-<li>This paper proposes adapting standard retrieval benchmarks to evaluate generated answers by measuring the similarity between the generated answer and relevant passages from the benchmark.</li>
-<li>The experiments show that the proposed evaluation approach can effectively measure the quality of generated answers and compare different models and prompts.</li>
-<li>The evaluation results demonstrate that generative models can perform comparably to the best retrieval-based methods in answering factual questions.</li>
-<li>The findings suggest that retrieval benchmarks can serve as a reliable anchor for evaluating the performance of generated answers, even without explicit relevance judgments.</li>
+<li>Large Language Models (LLMs) have shown impressive performance in various downstream tasks, and prompt engineering plays a crucial role in optimizing their performance.</li>
+<li>A goal-oriented prompt formulation, which guides LLMs to mimic human thinking, significantly improves their performance.</li>
+<li>Goal-oriented prompting methods can be categorized into five stages: goal decomposition, action selection, action implementation, sub-goal result evaluation, and sub-goal selection.</li>
+<li>Goal-oriented prompt engineering has been successfully applied to tasks such as reasoning, planning, question answering, code generation, dialogue, and recommendation.</li>
+<li>Challenges and opportunities for future research include the synergy of stages, application to other tasks, improving efficiency, and exploring hierarchical decomposition for complex problems.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2401.04842v1">Link to Article</a>
+<a href="http://arxiv.org/pdf/2401.14043v1">Link</a>
 
-<h2>Title: EpilepsyLLM: Domain-Specific Large Language Model Fine-tuned with Epilepsy Medical Knowledge</h2>
+<h2>Title: Prompt Weight Experiments for LLM Instruction Fine-Tuning</h2>
 <h3>Summary:</h3>
 <ul>
-<li>Large language models (LLMs) achieve impressive performance in language understanding and response generation.</li>
-<li>Fine-tuning LLMs with domain-specific datasets improves their specialized knowledge and practicality.</li>
-<li>Existing medical LLMs are limited to general medical knowledge in English, and their responses for disease-specific problems can be inaccurate or irrelevant, especially in languages other than English.</li>
-<li>This work focuses on the disease of epilepsy in Japanese and introduces a customized LLM called EpilepsyLLM, which is trained using epilepsy-specific datasets.</li>
-<li>Experimental results show that EpilepsyLLM provides more reliable and specialized medical knowledge responses for epilepsy.</li>
+<li>The study analyzed the effect of prompt token classification loss weighting (PLW) on the performance of large language models (LLMs) fine-tuned on instruction tasks.</li>
+<li>Models fine-tuned on short-completion instruction data showed a negative quadratic relationship with PLW, while models fine-tuned on long-completion datasets were unaffected by PLW.</li>
+<li>Prompt loss weight has a statistically significant relationship with model performance on downstream tasks when training on short-completion instruction data.</li>
+<li>PLW has no significant effect on downstream performance for models trained on long-completion data.</li>
+<li>Models fine-tuned on short-completion data with an optimal PLW value performed best on certain instruction-based benchmarks.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2401.05908v1">Link to Article</a>
+<a href="http://arxiv.org/pdf/2401.13586v1">Link</a>
+
+<h2>Title: ChatGraph: Chat with Your Graphs</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The paper introduces ChatGraph, a framework that allows users to interact with graphs through natural language, making graph analysis easier and more flexible.</li>
+<li>ChatGraph consists of three main modules: an API retrieval module that searches for relevant APIs, a graph-aware LLM module that enables the language model to understand graphs, and an API chain-oriented finetuning module that guides the model in generating API chains.</li>
+<li>The graph-aware LLM module transforms graphs into paths using a graph sequentializer, and the API chain-oriented finetuning module ensures that the generated API chains match the ground-truth API chains.</li>
+<li>The framework supports various scenarios, including graph understanding, graph comparison, graph cleaning, and API chain monitoring.</li>
+<li>The paper demonstrates the usability and efficiency of ChatGraph in real-world scenarios using diverse graph datasets.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2401.12672v1">Link</a>
 
 </body>
 </html>
