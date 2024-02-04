@@ -13,60 +13,76 @@ layout: default
 </head>
 <body>
 <h1>Top Research Articles of the Week</h1>
-<h2>Title: Leeroo Orchestrator: Elevating LLMs Performance Through Model Integration</h2>
+<h2>Title: E-EVAL: A Comprehensive Chinese K-12 Education Evaluation Benchmark for Large Language Models</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper proposes an architecture called Leeroo Orchestrator to harness the collective knowledge of multiple trained Large Language Models (LLMs) and achieve state-of-the-art performance.</li>
-<li>The Leeroo Orchestrator intelligently selects the most suitable expert model for each input based on predefined criteria such as speed, cost, and accuracy, thus optimizing resource utilization.</li>
-<li>The results show that the Leeroo Orchestrator achieves performance on par with the best open-source LLM models while incurring lower costs. It also outperforms closed-source LLM models with significant cost reductions.</li>
-<li>The architecture utilizes a self-play loop to generate training data for the orchestrator, continuously improving its decision-making and adaptability.</li>
-<li>The paper demonstrates that the Leeroo Orchestrator can create cost-effective LLMs by optimizing the synergy between multiple models, offering superior performance outcomes.</li>
+<li>The E-EVAL benchmark is introduced as the first comprehensive evaluation benchmark specifically designed for the Chinese K-12 education field.</li>
+<li>Chinese-dominant models perform well compared to English-dominant models, with some models even outperforming GPT 4.0.</li>
+<li>Models struggle with complex subjects such as mathematics, indicating the need for improvement in LLMs in this area.</li>
+<li>Chinese-dominant LLMs do not necessarily perform better at the primary school level compared to the middle school level, showing that mastery of higher-order knowledge does not imply mastery of lower-order knowledge.</li>
+<li>The Chain of Thought (CoT) technique is effective for challenging science subjects, while Few-shot prompting is more beneficial for liberal arts subjects.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2401.13979v1">Link</a>
+<p>Link: <a href="http://arxiv.org/pdf/2401.15927v1">http://arxiv.org/pdf/2401.15927v1</a></p>
 
-<h2>Title: AI for social science and social science of AI: A Survey</h2>
+<h2>Title: Towards Efficient and Reliable LLM Serving: A Real-World Workload Study</h2>
 <h3>Summary:</h3>
 <ul>
-<li>Recent advancements in large language models (LLMs) have sparked interest in combining AI and social science.</li>
-<li>AI for social science focuses on using AI as a tool to enhance various stages of social science research, such as literature review and hypothesis generation.</li>
-<li>Social science of AI examines AI agents as social entities with human-like cognitive and linguistic capabilities.</li>
-<li>Large language models can assist in hypothesis generation by providing literature searching and hypothesis proposing capabilities.</li>
-<li>In hypothesis verification, large language models can be used in experiment research and survey research to enhance efficiency and scalability.</li>
+<li>Large Language Models (LLMs), such as GPT models, have advanced significantly in recent years, but their development and deployment face challenges due to high operational costs.</li>
+<li>This paper introduces BurstGPT, a real-world trace dataset of LLM serving workloads, which provides insights into the characteristics of LLM serving workloads.</li>
+<li>The analysis of BurstGPT reveals burstiness patterns, variations in request and response distributions, and high failure rates in LLM serving systems.</li>
+<li>The BurstGPT dataset and benchmark suite enable performance evaluation of serving systems and can be used to optimize LLM workload management and resource allocation.</li>
+<li>Understanding these patterns is valuable for optimizing LLM serving systems and improving their efficiency and reliability in real-time applications.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2401.11839v1">Link</a>
+<p>Link: <a href="http://arxiv.org/pdf/2401.17644v1">http://arxiv.org/pdf/2401.17644v1</a></p>
 
-<h2>Title: Towards Goal-oriented Large Language Model Prompting: A Survey</h2>
+<h2>Title: Enhancing Human Experience in Human-Agent Collaboration: A Human-Centered Modeling Approach Based on Positive Human Gain</h2>
 <h3>Summary:</h3>
 <ul>
-<li>Large Language Models (LLMs) have shown impressive performance in various downstream tasks, and prompt engineering plays a crucial role in optimizing their performance.</li>
-<li>A goal-oriented prompt formulation, which guides LLMs to mimic human thinking, significantly improves their performance.</li>
-<li>Goal-oriented prompting methods can be categorized into five stages: goal decomposition, action selection, action implementation, sub-goal result evaluation, and sub-goal selection.</li>
-<li>Goal-oriented prompt engineering has been successfully applied to tasks such as reasoning, planning, question answering, code generation, dialogue, and recommendation.</li>
-<li>Challenges and opportunities for future research include the synergy of stages, application to other tasks, improving efficiency, and exploring hierarchical decomposition for complex problems.</li>
+<li>The paper proposes a "human-centered" modeling scheme for collaborative agents in games to enhance the experience of human players.</li>
+<li>They introduce the Reinforcement Learning from Human Gain (RLHG) approach, which aims to enhance the extent to which humans achieve their goals while maintaining agents' original abilities.</li>
+<li>The RLHG approach involves two stages: estimating the primitive human performance and training the agent to learn effective human enhancement behaviors.</li>
+<li>The authors evaluate the RLHG agent in the popular MOBA game, Honor of Kings, and show that it provides participants with a better gaming experience in both objective performance and subjective preference.</li>
+<li>The RLHG agent effectively improves the performance of both high-level and general-level participants in achieving their goals, bringing general-level participants closer to the performance of high-level participants.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2401.14043v1">Link</a>
+<p>Link: <a href="http://arxiv.org/pdf/2401.16444v1">http://arxiv.org/pdf/2401.16444v1</a></p>
 
-<h2>Title: Prompt Weight Experiments for LLM Instruction Fine-Tuning</h2>
+<h2>Title: Knowledge-Aware Code Generation with Large Language Models</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The study analyzed the effect of prompt token classification loss weighting (PLW) on the performance of large language models (LLMs) fine-tuned on instruction tasks.</li>
-<li>Models fine-tuned on short-completion instruction data showed a negative quadratic relationship with PLW, while models fine-tuned on long-completion datasets were unaffected by PLW.</li>
-<li>Prompt loss weight has a statistically significant relationship with model performance on downstream tasks when training on short-completion instruction data.</li>
-<li>PLW has no significant effect on downstream performance for models trained on long-completion data.</li>
-<li>Models fine-tuned on short-completion data with an optimal PLW value performed best on certain instruction-based benchmarks.</li>
+<li>6.3 RQ3: Impact of Shot Times and ChatGPT Settings</li>
+<li>Performance under Different Shot Times. To investigate the impact of shot times on KareCoder's performance, we conducted experiments with different shot times (1-shot and 3-shot) on the CodeF Post2021-9 dataset. As shown in Table 3, KareCoder maintained a consistently high performance across all difficulty levels and metrics, regardless of the shot times. In fact, KareCoder with 1-shot achieved better results than KareCoder with 3-shot in terms of Pass@1, Pass@3, and Pass@5. This indicates that, in practice, KareCoder can achieve good performance with fewer shots, which reduces the input length and saves resources.</li>
+<li>Performance under Different ChatGPT Settings. In our experiments, we used the default configuration for ChatGPT, with the temperature parameter set to 1 and the Top_p parameter also set to 1. We did not observe significant differences in performance when changing these parameters. However, it is worth noting that different settings may affect the quality and diversity of the generated prompts and code. Further exploration of different ChatGPT settings may yield better results in terms of both accuracy and variety of generated code.</li>
+<li>Answer to RQ3: Our experiments indicate that KareCoder exhibits a consistently high performance regardless of the shot times and ChatGPT settings. KareCoder achieves good results with fewer shots, which reduces input length and saves resources. While the default ChatGPT settings work well, exploring different settings could potentially yield improvements in the quality and diversity of generated prompts and code.</li>
+<li>6.4 RQ4: Generalizability of KareCoder</li>
+<li>To test the generalizability of KareCoder, we conducted experiments on the first 500 problems from the APPS test set. As shown in Table 6, KareCoder achieved good performance on the Pass@1 metric, surpassing other methods. This demonstrates that KareCoder is not limited to specific datasets and can be applied to other programming problems as well. However, it is worth noting that the performance of KareCoder may vary depending on the specific problem and dataset characteristics.</li>
+<li>Answer to RQ4: The experiments on the APPS dataset confirm that KareCoder is not limited to specific datasets and can achieve good performance on other programming problems as well. This demonstrates the generalizability of KareCoder beyond the CodeF dataset.</li>
+<li>7 CONCLUSION</li>
+<li>In this paper, we introduced KareCoder, a knowledge-aware code generation method that enhances the performance of large language models (LLMs) in handling novel programming problems. KareCoder utilizes a tailored Knowledge Library and prompts to guide the code generation process of LLMs. Our experiments on the CodeF and APPS datasets showed that KareCoder outperformed other methods, including direct code generation by LLMs, in terms of accuracy and pass rates. KareCoder achieved a relative improvement of up to 24.4% on the Pass@1 metric. We also found that the Knowledge Description format of the Knowledge Library yielded the best performance. Additionally, we observed that KareCoder can achieve good results with fewer shots and is not limited to specific datasets. Overall, KareCoder demonstrates the potential for enhancing the capabilities of LLMs in code generation tasks by integrating external knowledge. In the future, we plan to explore more refined Knowledge Libraries and investigate additional techniques to further improve the performance of KareCoder.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2401.13586v1">Link</a>
+<p>Link: <a href="http://arxiv.org/pdf/2401.15940v3">http://arxiv.org/pdf/2401.15940v3</a></p>
 
-<h2>Title: ChatGraph: Chat with Your Graphs</h2>
+<h2>Title: Corrective Retrieval Augmented Generation</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper introduces ChatGraph, a framework that allows users to interact with graphs through natural language, making graph analysis easier and more flexible.</li>
-<li>ChatGraph consists of three main modules: an API retrieval module that searches for relevant APIs, a graph-aware LLM module that enables the language model to understand graphs, and an API chain-oriented finetuning module that guides the model in generating API chains.</li>
-<li>The graph-aware LLM module transforms graphs into paths using a graph sequentializer, and the API chain-oriented finetuning module ensures that the generated API chains match the ground-truth API chains.</li>
-<li>The framework supports various scenarios, including graph understanding, graph comparison, graph cleaning, and API chain monitoring.</li>
-<li>The paper demonstrates the usability and efficiency of ChatGraph in real-world scenarios using diverse graph datasets.</li>
+<li>The paper introduces Corrective Retrieval Augmented Generation (CRAG) to improve the robustness of text generation models.</li>
+<li>CRAG incorporates a lightweight retrieval evaluator to assess the relevance and accuracy of retrieved documents, allowing for corrective actions.</li>
+<li>The proposed method includes knowledge refinement, web searches, and a decompose-then-recompose algorithm to filter out irrelevant information and improve the utilization of retrieved knowledge.</li>
+<li>Experimental results show that CRAG significantly improves the performance of retrieval-augmented generation approaches on various tasks.</li>
+<li>CRAG is plug-and-play and can be seamlessly integrated into existing retrieval-augmented generation models.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2401.12672v1">Link</a>
+<p>Link: <a href="http://arxiv.org/pdf/2401.15884v1">http://arxiv.org/pdf/2401.15884v1</a></p>
+
+<h2>Title: Ocassionally Secure: A Comparative Analysis of Code Generation Assistants</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The study compared the code generation capabilities of four advanced language models (GPT-3.5, GPT-4, Bard, and Gemini) across nine tasks relevant to building an e-commerce website.</li>
+<li>GPT-3.5 and GPT-4 consistently produced functional code for all tasks, while Bard and Gemini had lower rates of functional code generation.</li>
+<li>Security vulnerabilities were identified in the generated code, with Bard and Gemini showing fewer vulnerabilities compared to GPT-3.5 and GPT-4.</li>
+<li>Code complexity, measured by cyclomatic complexity, and lines of code were similar across the models, with Gemini producing slightly more complex code.</li>
+<li>The security persona had a mixed impact on code quality, with GPT models showing improved security outcomes, but Gemini showing an increase in vulnerabilities when using the security persona.</li>
+<li>Developers should consider the specific characteristics and limitations of each model when using them for code generation tasks.</li>
+</ul>
+<p>Link: <a href="http://arxiv.org/pdf/2402.00689v1">http://arxiv.org/pdf/2402.00689v1</a></p>
 
 </body>
 </html>
