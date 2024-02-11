@@ -9,53 +9,48 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-<title>Top AI Blog Posts of the Week</title>
+  <title>Top AI Blog Posts of the Week</title>
 </head>
 <body>
-<h1>Top AI Blog Posts of the Week</h1>
-<h2>Title: The 1xers Guide to LLM, ChatGPT and AI</h2>
-<h3>Source: Pythonforengineers.com</h3>
-<h4>Summary:</h4>
-<ul>
-<li>LLMs (Large Language Models) are computer programs that can understand, interpret, generate, and respond to human languages in an intelligent way.</li>
-<li>ChatGPT 4 is the most advanced version available, providing complex and detailed answers, while ChatGPT 3.5 is sufficient for most cases.</li>
-<li>Open source LLMs, such as LLama 2 from Facebook, are catching up to commercial LLMs and offer generous usage limits.</li>
-<li>Running LLMs locally on your machine can be achieved using tools like Ollama or Mozilla's LLamafile.</li>
-<li>LLMs can also be used for image generation, but caution must be exercised to avoid copyright infringement.</li>
-</ul>
-<a href="https://new.pythonforengineers.com/blog/the-1xers-guide-to-llm-chatgpt-ai/">Read More</a>
-<h2>Title: An open source DuckDB text to SQL LLM</h2>
-<h3>Source: Motherduck.com</h3>
-<h4>Summary:</h4>
-<ul>
-<li>MotherDuck has released an open-source DuckDB specific text-to-SQL LLM (language model) called DuckDB-NSQL.</li>
-<li>The goal of DuckDB-NSQL is to provide faster and less expensive inference for DuckDB applications.</li>
-<li>The model was trained on synthetically generated DuckDB SQL queries and general Text-2-SQL questions.</li>
-<li>DuckDB-NSQL is capable of generating DuckDB snippets and SQL queries for analytical questions.</li>
-<li>Users can try out DuckDB-NSQL on Hugging Face to generate SQL snippets by providing natural language instructions.</li>
-</ul>
-<a href="https://motherduck.com/blog/duckdb-text2sql-llm/">Read More</a>
-<h2>Title: MK1 Flywheel Unlocks the Full Potential of AMD Instinct for LLM Inference</h2>
-<h3>Source: Mkone.ai</h3>
-<h4>Summary:</h4>
-<ul>
-<li>The new inference engine MK1 Flywheel allows AMD Instinct Series to achieve comparable performance to a compute-matched NVIDIA GPU.</li>
-<li>MK1 Flywheel demonstrates up to 3.7x higher throughput compared to vLLM, leading to significant cost savings.</li>
-<li>AMD's Instinct MI300 series accelerator has the potential to challenge NVIDIA's market dominance for cloud AI workloads.</li>
-<li>AMD's software ecosystem has improved, with native support for AMD hardware on popular AI frameworks like PyTorch and TensorFlow.</li>
-<li>Building and optimizing the hardware and software components for AMD Instinct was a challenging but rewarding journey, and further optimizations are still possible.</li>
-</ul>
-<a href="https://mkone.ai/blog/mk1-flywheel-amd">Read More</a>
-<h2>Title: RAG Using Unstructured Data and Role of Knowledge Graphs</h2>
-<h3>Source: Kuzudb.com</h3>
-<h4>Summary:</h4>
-<ul>
-<li>RAG systems can use unstructured data, such as text files or PDF documents, in addition to structured data.</li>
-<li>Design decisions for RAG-U systems include what additional data to include (chunks of text, full documents, or extracted triples) and how to store and fetch this data.</li>
-<li>The use of knowledge graphs (KGs) in RAG-U systems can help link chunks of text and retrieve more relevant information.</li>
-<li>The availability and construction of KGs is an important consideration for RAG-U systems.</li>
-<li>Future work in RAG-U includes exploring the use of matrices for embedding chunks, evaluating different graph heuristics for extracting chunks, and improving the extraction of knowledge graphs from unstructured documents.</li>
-</ul>
-<a href="https://kuzudb.com/docusaurus/blog/llms-graphs-part-2">Read More</a>
+  <h1>Top AI Blog Posts of the Week</h1>
+  
+  <h2>Title: The 1xers Guide to LLM, ChatGPT and AI</h2>
+  <h3>Source: Pythonforengineers.com</h3>
+  <h4>Summary:</h4>
+  <ul>
+    <li>Large Language Models (LLMs) are computer programs that can understand, interpret, generate, and respond to human languages.</li>
+    <li>LLMs can be trained on terabytes of data and have billions of parameters, allowing them to generate intelligent responses.</li>
+    <li>ChatGPT is a popular commercial LLM, with ChatGPT 4 being the most advanced version available to paid users.</li>
+    <li>Open source LLMs, such as LLama 2 from Facebook, have gained popularity and offer free usage for certain limits.</li>
+    <li>Running LLMs locally on your machine can be done through tools like Ollama and Mozilla's LLamafile, which provide easy-to-use interfaces.</li>
+    <li>LLMs can also be used for image generation, but caution must be taken to avoid copyright infringement.</li>
+    <li>Following blogs like Ethan Mollick's and Simon Williamson's can help AI engineers stay up to date with advancements in the field.</li>
+  </ul>
+  <a href="https://new.pythonforengineers.com/blog/the-1xers-guide-to-llm-chatgpt-ai/">Read More</a>
+  
+  <h2>Title: An open source DuckDB text to SQL LLM</h2>
+  <h3>Source: Motherduck.com</h3>
+  <h4>Summary:</h4>
+  <ul>
+    <li>MotherDuck has released an open source DuckDB-specific text-to-SQL LLM model called DuckDB-NSQL.</li>
+    <li>The model is trained on synthetic DuckDB SQL queries and general Text-2-SQL questions, making it capable of generating DuckDB snippets and SQL queries for analytical questions.</li>
+    <li>DuckDB-NSQL is aware of all documented features in DuckDB 0.9.2, including official extensions, and can generate the exact DuckDB SQL query you are looking for.</li>
+    <li>The model weights are fully released on Hugging Face and are also available in a quantized GGUF format for use with llama.cpp.</li>
+    <li>You can try out DuckDB-NSQL on the Hugging Face space and prompt the model with natural language instructions to get SQL snippets.</li>
+  </ul>
+  <a href="https://motherduck.com/blog/duckdb-text2sql-llm/">Read More</a>
+  
+  <h2>Title: RAG Using Unstructured Data and Role of Knowledge Graphs</h2>
+  <h3>Source: Kuzudb.com</h3>
+  <h4>Summary:</h4>
+  <ul>
+    <li>RAG systems can use unstructured data, such as text files or PDF documents, in addition to structured data.</li>
+    <li>Design decisions for RAG-U systems include what additional data to include (chunks of texts, full documents, or extracted triples) and how to store and fetch this data (vector indices or graph databases).</li>
+    <li>Knowledge graphs (KGs) can be used in RAG-U systems to link chunks of text through relationships in the KG, allowing for more relevant information retrieval.</li>
+    <li>The use of KGs in RAG-U systems raises the question of automatic knowledge graph construction, which is still an active research topic.</li>
+    <li>There are multiple possibilities for future work in RAG-U systems, including exploring the use of matrices instead of vectors, evaluating different graph-based heuristics for chunk extraction, and improving the extraction of high-quality triples from unstructured documents.</li>
+  </ul>
+  <a href="https://kuzudb.com/docusaurus/blog/llms-graphs-part-2">Read More</a>
+  
 </body>
 </html>

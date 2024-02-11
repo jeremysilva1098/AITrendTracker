@@ -13,76 +13,72 @@ layout: default
 </head>
 <body>
 <h1>Top Research Articles of the Week</h1>
-<h2>Title: E-EVAL: A Comprehensive Chinese K-12 Education Evaluation Benchmark for Large Language Models</h2>
-<h3>Summary:</h3>
-<ul>
-<li>The E-EVAL benchmark is introduced as the first comprehensive evaluation benchmark specifically designed for the Chinese K-12 education field.</li>
-<li>Chinese-dominant models perform well compared to English-dominant models, with some models even outperforming GPT 4.0.</li>
-<li>Models struggle with complex subjects such as mathematics, indicating the need for improvement in LLMs in this area.</li>
-<li>Chinese-dominant LLMs do not necessarily perform better at the primary school level compared to the middle school level, showing that mastery of higher-order knowledge does not imply mastery of lower-order knowledge.</li>
-<li>The Chain of Thought (CoT) technique is effective for challenging science subjects, while Few-shot prompting is more beneficial for liberal arts subjects.</li>
-</ul>
-<p>Link: <a href="http://arxiv.org/pdf/2401.15927v1">http://arxiv.org/pdf/2401.15927v1</a></p>
 
-<h2>Title: Towards Efficient and Reliable LLM Serving: A Real-World Workload Study</h2>
+<h2>Title: How Well Can LLMs Negotiate? NegotiationArena Platform and Analysis</h2>
 <h3>Summary:</h3>
 <ul>
-<li>Large Language Models (LLMs), such as GPT models, have advanced significantly in recent years, but their development and deployment face challenges due to high operational costs.</li>
-<li>This paper introduces BurstGPT, a real-world trace dataset of LLM serving workloads, which provides insights into the characteristics of LLM serving workloads.</li>
-<li>The analysis of BurstGPT reveals burstiness patterns, variations in request and response distributions, and high failure rates in LLM serving systems.</li>
-<li>The BurstGPT dataset and benchmark suite enable performance evaluation of serving systems and can be used to optimize LLM workload management and resource allocation.</li>
-<li>Understanding these patterns is valuable for optimizing LLM serving systems and improving their efficiency and reliability in real-time applications.</li>
+  <li>The researchers developed NEGOTIATION ARENA, an open-source platform for evaluating the negotiation abilities of large language models (LLMs).</li>
+  <li>LLM agents can significantly improve their negotiation outcomes by employing certain behavioral tactics, such as pretending to be desperate or using insults.</li>
+  <li>The order in which an agent goes and its role in the negotiation have a significant impact on the outcome.</li>
+  <li>LLM agents exhibit biases and limitations, including anchoring and numerosity biases.</li>
+  <li>Understanding these irrational behaviors and vulnerabilities is important for improving the reliability of LLM agents.</li>
 </ul>
-<p>Link: <a href="http://arxiv.org/pdf/2401.17644v1">http://arxiv.org/pdf/2401.17644v1</a></p>
+<a href="http://arxiv.org/pdf/2402.05863v1">Link</a>
 
-<h2>Title: Enhancing Human Experience in Human-Agent Collaboration: A Human-Centered Modeling Approach Based on Positive Human Gain</h2>
+<h2>Title: Make Every Move Count: LLM-based High-Quality RTL Code Generation Using MCTS</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper proposes a "human-centered" modeling scheme for collaborative agents in games to enhance the experience of human players.</li>
-<li>They introduce the Reinforcement Learning from Human Gain (RLHG) approach, which aims to enhance the extent to which humans achieve their goals while maintaining agents' original abilities.</li>
-<li>The RLHG approach involves two stages: estimating the primitive human performance and training the agent to learn effective human enhancement behaviors.</li>
-<li>The authors evaluate the RLHG agent in the popular MOBA game, Honor of Kings, and show that it provides participants with a better gaming experience in both objective performance and subjective preference.</li>
-<li>The RLHG agent effectively improves the performance of both high-level and general-level participants in achieving their goals, bringing general-level participants closer to the performance of high-level participants.</li>
+  <li>Existing large language models (LLMs) for Verilog RTL code generation struggle with compilation failures and sub-optimal power, performance, and area (PPA) efficiency.</li>
+  <li>The paper proposes an automated technique that combines Monte Carlo tree-search (MCTS) with LLMs to generate compilable, functionally correct, and PPA-optimized Verilog code.</li>
+  <li>The technique consistently generates functionally correct code and effectively addresses the PPA-unawareness drawback of naive LLMs.</li>
+  <li>For the largest design (16-bit adder), the technique achieves a 31.8% improvement in the area-delay product.</li>
+  <li>The technique can be further improved by fine-tuning the LLM parameters and striking a balance between exploration and exploitation.</li>
 </ul>
-<p>Link: <a href="http://arxiv.org/pdf/2401.16444v1">http://arxiv.org/pdf/2401.16444v1</a></p>
+<a href="http://arxiv.org/pdf/2402.03289v1">Link</a>
 
-<h2>Title: Knowledge-Aware Code Generation with Large Language Models</h2>
+<h2>Title: A call for embodied AI</h2>
 <h3>Summary:</h3>
 <ul>
-<li>6.3 RQ3: Impact of Shot Times and ChatGPT Settings</li>
-<li>Performance under Different Shot Times. To investigate the impact of shot times on KareCoder's performance, we conducted experiments with different shot times (1-shot and 3-shot) on the CodeF Post2021-9 dataset. As shown in Table 3, KareCoder maintained a consistently high performance across all difficulty levels and metrics, regardless of the shot times. In fact, KareCoder with 1-shot achieved better results than KareCoder with 3-shot in terms of Pass@1, Pass@3, and Pass@5. This indicates that, in practice, KareCoder can achieve good performance with fewer shots, which reduces the input length and saves resources.</li>
-<li>Performance under Different ChatGPT Settings. In our experiments, we used the default configuration for ChatGPT, with the temperature parameter set to 1 and the Top_p parameter also set to 1. We did not observe significant differences in performance when changing these parameters. However, it is worth noting that different settings may affect the quality and diversity of the generated prompts and code. Further exploration of different ChatGPT settings may yield better results in terms of both accuracy and variety of generated code.</li>
-<li>Answer to RQ3: Our experiments indicate that KareCoder exhibits a consistently high performance regardless of the shot times and ChatGPT settings. KareCoder achieves good results with fewer shots, which reduces input length and saves resources. While the default ChatGPT settings work well, exploring different settings could potentially yield improvements in the quality and diversity of generated prompts and code.</li>
-<li>6.4 RQ4: Generalizability of KareCoder</li>
-<li>To test the generalizability of KareCoder, we conducted experiments on the first 500 problems from the APPS test set. As shown in Table 6, KareCoder achieved good performance on the Pass@1 metric, surpassing other methods. This demonstrates that KareCoder is not limited to specific datasets and can be applied to other programming problems as well. However, it is worth noting that the performance of KareCoder may vary depending on the specific problem and dataset characteristics.</li>
-<li>Answer to RQ4: The experiments on the APPS dataset confirm that KareCoder is not limited to specific datasets and can achieve good performance on other programming problems as well. This demonstrates the generalizability of KareCoder beyond the CodeF dataset.</li>
-<li>7 CONCLUSION</li>
-<li>In this paper, we introduced KareCoder, a knowledge-aware code generation method that enhances the performance of large language models (LLMs) in handling novel programming problems. KareCoder utilizes a tailored Knowledge Library and prompts to guide the code generation process of LLMs. Our experiments on the CodeF and APPS datasets showed that KareCoder outperformed other methods, including direct code generation by LLMs, in terms of accuracy and pass rates. KareCoder achieved a relative improvement of up to 24.4% on the Pass@1 metric. We also found that the Knowledge Description format of the Knowledge Library yielded the best performance. Additionally, we observed that KareCoder can achieve good results with fewer shots and is not limited to specific datasets. Overall, KareCoder demonstrates the potential for enhancing the capabilities of LLMs in code generation tasks by integrating external knowledge. In the future, we plan to explore more refined Knowledge Libraries and investigate additional techniques to further improve the performance of KareCoder.</li>
+  <li>Embodied AI (E-AI) is proposed as the next step in the pursuit of Artificial General Intelligence (AGI), distinguishing itself from current AI advancements.</li>
+  <li>E-AI emphasizes perception, action, memory, and learning as essential components of an embodied agent and aligns with the active inference principle.</li>
+  <li>Large Language Models (LLMs) like GPT-4 and Gemini have made significant progress in AI, but they lack the ability to evolve with time and experience.</li>
+  <li>E-AI agents should be capable of seamless communication, collaboration, and coexistence with humans and other intelligent entities in real-world environments.</li>
+  <li>Challenges in E-AI research include formulating a new AI learning theory, innovation in advanced hardware, managing noise and uncertainty, simulators, and enhancing AI-human communication.</li>
 </ul>
-<p>Link: <a href="http://arxiv.org/pdf/2401.15940v3">http://arxiv.org/pdf/2401.15940v3</a></p>
+<a href="http://arxiv.org/pdf/2402.03824v1">Link</a>
 
-<h2>Title: Corrective Retrieval Augmented Generation</h2>
+<h2>Title: Intent-based Prompt Calibration: Enhancing prompt optimization with synthetic boundary cases</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The paper introduces Corrective Retrieval Augmented Generation (CRAG) to improve the robustness of text generation models.</li>
-<li>CRAG incorporates a lightweight retrieval evaluator to assess the relevance and accuracy of retrieved documents, allowing for corrective actions.</li>
-<li>The proposed method includes knowledge refinement, web searches, and a decompose-then-recompose algorithm to filter out irrelevant information and improve the utilization of retrieved knowledge.</li>
-<li>Experimental results show that CRAG significantly improves the performance of retrieval-augmented generation approaches on various tasks.</li>
-<li>CRAG is plug-and-play and can be seamlessly integrated into existing retrieval-augmented generation models.</li>
+  <li>Prompt engineering is crucial for optimizing the performance of Large Language Models (LLMs) on various tasks.</li>
+  <li>A new method called Intent-based Prompt Calibration (IPC) is introduced, which uses a calibration process to refine the prompt based on user intent.</li>
+  <li>IPC generates synthetic boundary cases and optimizes the prompt according to the generated dataset, outperforming state-of-the-art methods with limited annotated samples.</li>
+  <li>IPC can be applied to tasks such as moderation and generation, and is modular and adaptable to different use cases.</li>
+  <li>The system incorporates meta-prompts for sample generation, prompt analysis, and prompt generation, improving the effectiveness of the optimization process.</li>
 </ul>
-<p>Link: <a href="http://arxiv.org/pdf/2401.15884v1">http://arxiv.org/pdf/2401.15884v1</a></p>
+<a href="http://arxiv.org/pdf/2402.03099v1">Link</a>
 
-<h2>Title: Ocassionally Secure: A Comparative Analysis of Code Generation Assistants</h2>
+<h2>Title: C-RAG: Certified Generation Risks for Retrieval-Augmented Language Models</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The study compared the code generation capabilities of four advanced language models (GPT-3.5, GPT-4, Bard, and Gemini) across nine tasks relevant to building an e-commerce website.</li>
-<li>GPT-3.5 and GPT-4 consistently produced functional code for all tasks, while Bard and Gemini had lower rates of functional code generation.</li>
-<li>Security vulnerabilities were identified in the generated code, with Bard and Gemini showing fewer vulnerabilities compared to GPT-3.5 and GPT-4.</li>
-<li>Code complexity, measured by cyclomatic complexity, and lines of code were similar across the models, with Gemini producing slightly more complex code.</li>
-<li>The security persona had a mixed impact on code quality, with GPT models showing improved security outcomes, but Gemini showing an increase in vulnerabilities when using the security persona.</li>
-<li>Developers should consider the specific characteristics and limitations of each model when using them for code generation tasks.</li>
+  <li>This paper presents C-RAG, a framework that provides certified generation risks for retrieval-augmented language models (RAG).</li>
+  <li>C-RAG provides conformal risk analysis for RAG models and certifies an upper confidence bound of generation risks.</li>
+  <li>Theoretical analysis shows that RAG models achieve lower conformal generation risks compared to single language models without retrieval.</li>
+  <li>Empirical results demonstrate the soundness and tightness of conformal generation risk guarantees across different datasets and retrieval models.</li>
+  <li>C-RAG allows for adjusting RAG configurations to control generation risks, and larger numbers of retrieved examples lead to lower risks.</li>
 </ul>
-<p>Link: <a href="http://arxiv.org/pdf/2402.00689v1">http://arxiv.org/pdf/2402.00689v1</a></p>
+<a href="http://arxiv.org/pdf/2402.03181v1">Link</a>
+
+<h2>Title: KS-Lottery: Finding Certified Lottery Tickets for Multilingual Language Models</h2>
+<h3>Summary:</h3>
+<ul>
+  <li>The paper introduces a method called KS-Lottery for identifying winning tickets in fine-tuned large language models (LLMs).</li>
+  <li>KS-Lottery uses the Kolmogorov-Smirnov Test to analyze the distribution shift of parameters before and after fine-tuning.</li>
+  <li>The method focuses on finding winning tickets in the embedding layer of LLMs and demonstrates that fine-tuning only a small subset of token embeddings can achieve comparable performance to full fine-tuning.</li>
+  <li>The paper provides theoretical evidence that KS-Lottery can find certified winning tickets and shows empirical results supporting its effectiveness.</li>
+  <li>KS-Lottery is shown to be more efficient than other parameter-efficient tuning algorithms while achieving similar performance levels.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2402.02801v1">Link</a>
 
 </body>
 </html>
