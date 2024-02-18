@@ -13,72 +13,81 @@ layout: default
 </head>
 <body>
 <h1>Top Research Articles of the Week</h1>
-
-<h2>Title: How Well Can LLMs Negotiate? NegotiationArena Platform and Analysis</h2>
+<h2>Title: Why and When LLM-Based Assistants Can Go Wrong: Investigating the Effectiveness of Prompt-Based Interactions for Software Help-Seeking</h2>
 <h3>Summary:</h3>
 <ul>
-  <li>The researchers developed NEGOTIATION ARENA, an open-source platform for evaluating the negotiation abilities of large language models (LLMs).</li>
-  <li>LLM agents can significantly improve their negotiation outcomes by employing certain behavioral tactics, such as pretending to be desperate or using insults.</li>
-  <li>The order in which an agent goes and its role in the negotiation have a significant impact on the outcome.</li>
-  <li>LLM agents exhibit biases and limitations, including anchoring and numerosity biases.</li>
-  <li>Understanding these irrational behaviors and vulnerabilities is important for improving the reliability of LLM agents.</li>
+<li>Large Language Model (LLM) assistants, such as ChatGPT, have the potential to assist users in navigating complex software.</li>
+<li>Prompt-based interactions can enhance the accuracy and relevance of LLM assistance.</li>
+<li>Users often struggle to understand the relationship between the prompt and the LLM's responses, leading to difficulties in applying the LLM's advice for software tasks.</li>
+<li>Users tend to trust LLM assistance without critically evaluating its accuracy, indicating a gap between their lack of software expertise and their ability to evaluate the LLM's assistance.</li>
+<li>Designing context-aware cues and incorporating explainable features into LLMs can help users understand prompt-based interactions and maximize the utility of LLM assistants.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2402.05863v1">Link</a>
+<a href="http://arxiv.org/pdf/2402.08030v1">Link</a>
 
-<h2>Title: Make Every Move Count: LLM-based High-Quality RTL Code Generation Using MCTS</h2>
+<h2>Title: Refined Direct Preference Optimization with Synthetic Data for Behavioral Alignment of LLMs</h2>
 <h3>Summary:</h3>
 <ul>
-  <li>Existing large language models (LLMs) for Verilog RTL code generation struggle with compilation failures and sub-optimal power, performance, and area (PPA) efficiency.</li>
-  <li>The paper proposes an automated technique that combines Monte Carlo tree-search (MCTS) with LLMs to generate compilable, functionally correct, and PPA-optimized Verilog code.</li>
-  <li>The technique consistently generates functionally correct code and effectively addresses the PPA-unawareness drawback of naive LLMs.</li>
-  <li>For the largest design (16-bit adder), the technique achieves a 31.8% improvement in the area-delay product.</li>
-  <li>The technique can be further improved by fine-tuning the LLM parameters and striking a balance between exploration and exploitation.</li>
+<li>The paper introduces refined Direct Preference Optimization (rDPO), a method for improving the behavioral alignment of Large Language Models (LLMs) without the need for human-annotated data.</li>
+<li>The method involves creating synthetic data using self-critique prompting by a teacher LLM and then utilizing a generalized DPO loss function to distill to a student LLM.</li>
+<li>rDPO is shown to be effective in a diverse set of behavioral alignment tasks, such as improved safety, robustness against role-playing, and reduced sycophancy.</li>
+<li>The experiments demonstrate that rDPO outperforms alternative methods across these tasks.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2402.03289v1">Link</a>
+<a href="http://arxiv.org/pdf/2402.08005v1">Link</a>
 
-<h2>Title: A call for embodied AI</h2>
+<h2>Title: Secret Collusion Among Generative AI Agents</h2>
 <h3>Summary:</h3>
 <ul>
-  <li>Embodied AI (E-AI) is proposed as the next step in the pursuit of Artificial General Intelligence (AGI), distinguishing itself from current AI advancements.</li>
-  <li>E-AI emphasizes perception, action, memory, and learning as essential components of an embodied agent and aligns with the active inference principle.</li>
-  <li>Large Language Models (LLMs) like GPT-4 and Gemini have made significant progress in AI, but they lack the ability to evolve with time and experience.</li>
-  <li>E-AI agents should be capable of seamless communication, collaboration, and coexistence with humans and other intelligent entities in real-world environments.</li>
-  <li>Challenges in E-AI research include formulating a new AI learning theory, innovation in advanced hardware, managing noise and uncertainty, simulators, and enhancing AI-human communication.</li>
+<li>The paper introduces the problem of secret collusion among generative AI agents and the challenges it poses in terms of privacy and security.</li>
+<li>The authors propose a comprehensive model evaluation framework to assess the capabilities required for secret collusion, including steganography and coordination techniques.</li>
+<li>The empirical evaluations on baseline language models show that current models have limited steganographic capabilities, but there is a significant capability jump with GPT-4.</li>
+<li>The paper also discusses potential mitigation measures to prevent secret collusion, such as monitoring and penalization, setting direct incentives, and limiting capabilities.</li>
+<li>Further research is recommended to explore fundamental limitations to model capabilities and to evaluate models under real-world conditions.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2402.03824v1">Link</a>
+<a href="http://arxiv.org/pdf/2402.07510v1">Link</a>
 
-<h2>Title: Intent-based Prompt Calibration: Enhancing prompt optimization with synthetic boundary cases</h2>
+<h2>Title: PRompt Optimization in Multi-Step Tasks (PROMST): Integrating Human Feedback and Preference Alignment</h2>
 <h3>Summary:</h3>
 <ul>
-  <li>Prompt engineering is crucial for optimizing the performance of Large Language Models (LLMs) on various tasks.</li>
-  <li>A new method called Intent-based Prompt Calibration (IPC) is introduced, which uses a calibration process to refine the prompt based on user intent.</li>
-  <li>IPC generates synthetic boundary cases and optimizes the prompt according to the generated dataset, outperforming state-of-the-art methods with limited annotated samples.</li>
-  <li>IPC can be applied to tasks such as moderation and generation, and is modular and adaptable to different use cases.</li>
-  <li>The system incorporates meta-prompts for sample generation, prompt analysis, and prompt generation, improving the effectiveness of the optimization process.</li>
+<li>The paper introduces PROMST, a framework for automatic prompt optimization in multi-step tasks.</li>
+<li>PROMST incorporates human feedback and a learned score prediction model to generate optimal prompts for large language models (LLMs).</li>
+<li>PROMST outperforms existing methods on eight representative multi-step tasks, achieving an average improvement of 27.7% to 28.2% on GPT-3.5 and GPT-4, respectively.</li>
+<li>The integration of human feedback and the score model improves the prompt search process and aligns with individual preferences.</li>
+<li>The length of prompts correlates with higher scores, and modifying the score function can better align prompts with user preferences.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2402.03099v1">Link</a>
+<a href="http://arxiv.org/pdf/2402.08702v1">Link</a>
 
-<h2>Title: C-RAG: Certified Generation Risks for Retrieval-Augmented Language Models</h2>
+<h2>Title: Grounding Language Model with Chunking-Free In-Context Retrieval</h2>
 <h3>Summary:</h3>
 <ul>
-  <li>This paper presents C-RAG, a framework that provides certified generation risks for retrieval-augmented language models (RAG).</li>
-  <li>C-RAG provides conformal risk analysis for RAG models and certifies an upper confidence bound of generation risks.</li>
-  <li>Theoretical analysis shows that RAG models achieve lower conformal generation risks compared to single language models without retrieval.</li>
-  <li>Empirical results demonstrate the soundness and tightness of conformal generation risk guarantees across different datasets and retrieval models.</li>
-  <li>C-RAG allows for adjusting RAG configurations to control generation risks, and larger numbers of retrieved examples lead to lower risks.</li>
+<li>The paper presents CFIC, a chunking-free in-context retrieval approach for Retrieval-Augmented Generation (RAG) systems.</li>
+<li>CFIC utilizes encoded hidden states of documents for in-context retrieval, eliminating the need for document chunking.</li>
+<li>It incorporates Constrained Sentence Prefix Decoding and Skip Decoding strategies to enhance retrieval efficiency and fidelity of generated grounding text evidence.</li>
+<li>CFIC outperforms traditional methods in retrieving relevant and accurate evidence and offers a more streamlined and efficient retrieval solution.</li>
+<li>CFIC is particularly effective in identifying precise grounding text evidence, making it valuable for RAG systems.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2402.03181v1">Link</a>
+<a href="http://arxiv.org/pdf/2402.09760v1">Link</a>
 
-<h2>Title: KS-Lottery: Finding Certified Lottery Tickets for Multilingual Language Models</h2>
+<h2>Title: Grounding Data Science Code Generation with Input-Output Specifications</h2>
 <h3>Summary:</h3>
 <ul>
-  <li>The paper introduces a method called KS-Lottery for identifying winning tickets in fine-tuned large language models (LLMs).</li>
-  <li>KS-Lottery uses the Kolmogorov-Smirnov Test to analyze the distribution shift of parameters before and after fine-tuning.</li>
-  <li>The method focuses on finding winning tickets in the embedding layer of LLMs and demonstrates that fine-tuning only a small subset of token embeddings can achieve comparable performance to full fine-tuning.</li>
-  <li>The paper provides theoretical evidence that KS-Lottery can find certified winning tickets and shows empirical results supporting its effectiveness.</li>
-  <li>KS-Lottery is shown to be more efficient than other parameter-efficient tuning algorithms while achieving similar performance levels.</li>
+<li>The paper introduces GIFT4CODE, a framework for instruction fine-tuning of large language models (LLMs) in data science programming.</li>
+<li>GIFT4CODE leverages synthetic data produced by the LLM itself and uses execution-derived feedback as a key learning signal to align the model's outputs with user specifications.</li>
+<li>The method improves the LLM's ability to generate code that is executable and accurately aligned with user specifications, enhancing the quality of code generation for complex data science tasks.</li>
+<li>The authors evaluate GIFT4CODE on two challenging data science benchmarks, ARCADE and DS-1000, and demonstrate significant improvements in code generation performance.</li>
+<li>The methodology underlying GIFT4CODE is general and adaptable, making it applicable to different domains that require precise task descriptions.</li>
 </ul>
-<a href="http://arxiv.org/pdf/2402.02801v1">Link</a>
+<a href="http://arxiv.org/pdf/2402.08073v1">Link</a>
+
+<h2>Title: A Human-Inspired Reading Agent with Gist Memory of Very Long Contexts</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The paper proposes ReadAgent, an agent system that extends the effective context length of language models up to 20x by using a human-inspired approach.</li>
+<li>ReadAgent uses a prompting system to decide what content to store in memory episodes, compresses these episodes into shorter gist memories, and performs interactive look-ups in the original text when needed.</li>
+<li>ReadAgent outperforms baseline methods in long-document reading comprehension tasks and improves the effective context length compared to using full text or retrieval methods.</li>
+<li>The results show that LLMs are capable of generating useful gist memories and reasoning over them to perform tasks in long contexts.</li>
+<li>ReadAgent can be adapted to different problem settings and shows promising performance in web navigation.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2402.09727v1">Link</a>
 
 </body>
 </html>
