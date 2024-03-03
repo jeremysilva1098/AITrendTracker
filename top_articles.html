@@ -12,61 +12,63 @@ layout: default
 <title>Top Research Articles of the Week</title>
 </head>
 <body>
+
 <h1>Top Research Articles of the Week</h1>
-<h2>Title: Leveraging Large Language Models for Concept Graph Recovery and Question Answering in NLP Education</h2>
+
+<h2>Title: A Comprehensive Evaluation of Quantization Strategies for Large Language Models</h2>
 <h3>Summary:</h3>
 <ul>
-<li>This study investigates the use of Large Language Models (LLMs) in educational scenarios, specifically for concept graph recovery and question-answering (QA) tasks in the field of Natural Language Processing (NLP).</li>
-<li>The researchers found that LLMs' ability to recover concept graphs, even in a zero-shot setting, is competitive with supervised methods and can improve QA performance by up to 26%.</li>
-<li>They also proposed a new benchmark, TutorQA, consisting of expert-verified QA tasks that require reasoning with the concept graph.</li>
-<li>The CGLLM pipeline, which integrates concept graphs with LLMs, was developed to enhance the interaction between the LLMs and the concept graph for improved QA performance.</li>
-<li>The study highlights the importance of incorporating knowledge systems, such as concept graphs, to provide more fine-grained and accurate answers in educational applications of LLMs.</li>
+<li>Quantization techniques can reduce the number of bits needed for model weights or activations in large language models (LLMs) with minimal performance loss.</li>
+<li>LLMs with 4-bit quantization can maintain performance comparable to non-quantized models across a range of benchmarks.</li>
+<li>Perplexity can be used as a proxy metric for quantized LLMs on most benchmarks.</li>
+<li>Isolating outlier weights is crucial for effective quantization to extreme levels (2 bits) without significant performance degradation.</li>
+<li>Quantizing LLMs can reduce memory consumption but may slow down inference speed, requiring engineering effort and hardware support for practical deployment.</li>
 </ul>
-<h2>Title: Polarization of Autonomous Generative AI Agents Under Echo Chambers</h2>
+<a href="http://arxiv.org/pdf/2402.16775v1">Link</a>
+
+<h2>Title: Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas</h2>
 <h3>Summary:</h3>
 <ul>
-<li>This research investigates the potential for polarization among autonomous AI agents in echo chamber environments.</li>
-<li>The study found that AI agents based on generative language models tend to become polarized in echo chamber environments.</li>
-<li>The analysis showed that this polarization is caused by the agents' ability to update their opinions by considering their own and surrounding agents' opinions.</li>
-<li>Factors such as the agent's persona, number of discussing agents, initial opinion distribution, and the existence of reasons significantly influence polarization.</li>
-<li>The findings suggest the need to monitor these factors to prevent the polarization of AI agents and the potential negative consequences.</li>
+<li>This survey examines cooperation in social dilemmas from the perspective of AI and highlights the advancements made in understanding and enhancing cooperation.</li>
+<li>The survey focuses on three key areas: multi-agent cooperation, human-agent cooperation, and leveraging AI agents to enhance cooperation among humans.</li>
+<li>In multi-agent cooperation, strategies are developed to promote cooperation among rational agents, including embedding human-like motives and using mechanisms like peer rewarding and formal contracts.</li>
+<li>In human-agent cooperation, AI algorithms are designed to cooperate with humans, and human biases towards AI agents are studied to mitigate their impact on cooperation.</li>
+<li>The survey also explores how AI agents can promote cooperation among humans by providing recommendations and shows the potential of AI agents in enhancing human-human cooperation in social dilemmas.</li>
 </ul>
-<h2>Title: Prompt Stealing Attacks Against Large Language Models</h2>
+<a href="http://arxiv.org/pdf/2402.17270v1">Link</a>
+
+<h2>Title: LangGPT: Rethinking Structured Reusable Prompt Design Framework for LLMs from the Programming Language</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The defender's goal is to maximize the similarity between the generated answer and the original prompts.</li>
-<li>The defender has access to the original prompts and the answer generator, which allows them to analyze potential vulnerabilities and leakage of information.</li>
-<li>The prompt-based defense strategy aims to perturb the original prompts by adding additional prompts, making it difficult for the adversary to reverse engineer the original prompts.</li>
-<li>The answer-based defense strategy aims to perturb the generated answer to prevent the adversary from extracting the original prompts.</li>
-<li>The prompt-based defense is evaluated by adding random prompts and semantically related prompts, showing that semantically related prompts effectively mitigate prompt stealing attacks.</li>
-<li>The answer-based defense is evaluated by modifying the answer with random words and replacing key words, showing that modifying the answer with random words does not effectively mitigate prompt stealing attacks.</li>
+<li>The paper introduces LangGPT, a dual-layer prompt design framework for LLMs that is inspired by structured reusable programming languages.</li>
+<li>LangGPT significantly enhances the capacity of LLMs to produce high-quality responses compared to baseline prompts.</li>
+<li>LangGPT provides an easy-to-learn normative structure and supports migration and reuse of prompts.</li>
+<li>The paper proposes prompt design rules based on the differences between programming languages and natural languages.</li>
+<li>LangGPT has been evaluated through experiments and a user survey, demonstrating its effectiveness and ease of use.</li>
 </ul>
-<h2>Title: The Effectiveness of Graph Contrastive Learning on Mathematical Information Retrieval</h2>
+<a href="http://arxiv.org/pdf/2402.16929v1">Link</a>
+
+<h2>Title: RetrievalQA: Assessing Adaptive Retrieval-Augmented Generation for Short-form Open-Domain Question Answering</h2>
 <h3>Summary:</h3>
 <ul>
-<li>This paper explores the use of Graph Contrastive Learning (GCL) for mathematical information retrieval (MIR) to retrieve documents containing mathematical formulas.</li>
-<li>The results show that GCL consistently outperforms the current leading formula retrieval model, TangentCFT, in terms of retrieval performance.</li>
-<li>GCL effectively captures the notation structure of mathematical formulas, which is crucial for MIR.</li>
-<li>The study focuses exclusively on models that rely solely on mathematical formulas for MIR, excluding models that incorporate contextual texts.</li>
-<li>The paper provides the source code for the GCL formula retrieval model to support ongoing research and development in the field.</li>
+<li>The paper introduces a benchmark dataset called RetrievalQA for evaluating adaptive retrieval-augmented generation (ARAG) methods in open-domain question answering.</li>
+<li>The effectiveness of existing ARAG methods, including calibration-based and model-based approaches, is evaluated on RetrievalQA. Calibration-based methods require threshold tuning, while vanilla prompting is insufficient in guiding language models to make reliable retrieval decisions.</li>
+<li>The paper proposes a new method called Time-Aware Adaptive Retrieval (TA-ARE) that improves ARAG without calibration or additional training. TA-ARE includes time awareness in the instruction and uses in-context demonstrations to enhance models' retrieval decisions.</li>
+<li>TA-ARE significantly improves the retrieval and match accuracy of existing models on RetrievalQA, demonstrating the effectiveness of the proposed method.</li>
+<li>The paper also provides error analysis and ablation studies to validate the performance of TA-ARE and highlight the challenges and potential improvements in ARAG for question answering tasks.</li>
 </ul>
-<h2>Title: Rethinking Scientific Summarization Evaluation: Grounding Explainable Metrics on Facet-aware Benchmark</h2>
+<a href="http://arxiv.org/pdf/2402.16457v1">Link</a>
+
+<h2>Title: Pandora's White-Box: Increased Training Data Leakage in Open LLMs</h2>
 <h3>Summary:</h3>
 <ul>
-<li>The traditional evaluation methods for scientific summarization, such as n-gram overlap and QA, are inadequate in providing explanations and identifying key content.</li>
-<li>The Facet-aware Metric (FM), which utilizes large language models (LLMs), offers a more comprehensive evaluation of scientific summaries by decomposing the evaluation task into simpler subtasks.</li>
-<li>Finetuned smaller models can rival LLMs in scientific contexts, while LLMs have limitations in learning from in-context information in scientific domains.</li>
-<li>Existing evaluation metrics show moderate correlation with human scores and high inter-correlation with ROUGE scores, emphasizing n-gram overlap.</li>
-<li>Decomposition is beneficial for both evaluating and understanding scientific abstracts.</li>
+<li>The paper presents membership inference attacks (MIAs) against pre-trained Large Language Models (LLMs) that can achieve high true positive rates and low false positive rates.</li>
+<li>The authors propose three new white-box MIAs: an attack based on the gradient norm, a supervised neural network classifier, and a single-step loss ratio attack. These attacks outperform existing black-box baselines and close the gap between MIA attack success against LLMs and other models.</li>
+<li>In the fine-tuning setting, the authors find that a fine-tuned loss ratio attack (FLoRa) can achieve near-perfect MIA performance given access to the loss of the fine-tuned and base models.</li>
+<li>The authors also show that using these MIAs, significant portions of the fine-tuning dataset can be extracted from fine-tuned LLMs, even after just a few epochs of fine-tuning.</li>
+<li>The results highlight the vulnerability of LLMs to privacy attacks and the need for careful consideration before fine-tuning LLMs on sensitive data.</li>
 </ul>
-<h2>Title: Tool-Augmented LLMs as a Universal Interface for IDEs</h2>
-<h3>Summary:</h3>
-<ul>
-<li>The paper discusses the concept of using Large Language Models (LLMs) as a universal interface for Integrated Development Environments (IDEs).</li>
-<li>LLMs can perform complex actions involving multiple IDE features, eliminating the need for users to search through options and actions.</li>
-<li>The paper presents a proof-of-concept tool that utilizes LLMs to call external tools and expedite task execution.</li>
-<li>LLMs can assist IDE users in repetitive tasks and rarely occurring tasks that require a combination of tools.</li>
-<li>IDE developers can focus on making new features accessible to LLMs, simplifying the default user interface and improving discoverability.</li>
-</ul>
+<a href="http://arxiv.org/pdf/2402.17012v1">Link</a>
+
 </body>
 </html>
