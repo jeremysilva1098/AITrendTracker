@@ -9,75 +9,90 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Top Research Articles of the Week</title>
+<title>Top Research Articles of the Week</title>
 </head>
 <body>
-    <h1>Top Research Articles of the Week</h1>
+<h1>Top Research Articles of the Week</h1>
+<h2>Title: SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The paper introduces SVD-LLM, a new method for compressing large language models (LLMs) using Singular Value Decomposition (SVD).</li>
+<li>SVD-LLM addresses the limitations of existing SVD-based LLM compression methods by incorporating a truncation-aware data whitening strategy and a layer-wise closed-form model parameter update strategy.</li>
+<li>SVD-LLM outperforms state-of-the-art methods, especially at high model compression ratios, and exhibits superior compression speed.</li>
+<li>SVD-LLM can be combined with other LLM compression methods, such as quantization and parameter pruning, to further enhance their performance.</li>
+<li>SVD-LLM is not only able to compress LLMs but also compress the runtime KV cache, reducing memory footprint during inference.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2403.07378v1">Link</a>
 
-    <h2>Title: Towards Safe and Aligned Large Language Models for Medicine</h2>
-    <h3>Summary:</h3>
-    <ul>
-        <li>The paper discusses the importance of evaluating the safety and alignment of large language models (LLMs) in the medical field.</li>
-        <li>The authors define medical safety and alignment based on the Principles of Medical Ethics set forth by the American Medical Association.</li>
-        <li>They develop a dataset of harmful medical prompts to evaluate the safety and alignment of LLMs, and find that aligned LLMs have lower harmfulness scores compared to non-aligned LLMs.</li>
-        <li>Medical LLMs tend to have higher harmfulness scores compared to general-knowledge LLMs, indicating a higher risk of harmful outputs.</li>
-        <li>The paper highlights the need for further research and mitigation strategies to minimize the risks of harm of LLMs in medicine.</li>
-    </ul>
-    <a href="http://arxiv.org/pdf/2403.03744v1">Link</a>
+<h2>Title: Hallmarks of Optimization Trajectories in Neural Networks and LLMs: The Lengths, Bends, and Dead Ends</h2>
+<h3>Summary:</h3>
+<ul>
+<li>The paper proposes a new perspective for understanding neural network optimization by analyzing the structure of optimization trajectories.</li>
+<li>The authors introduce qualitative and quantitative hallmarks to analyze the complexity and regularity of optimization trajectories.</li>
+<li>The analysis reveals the effects of hyperparameters such as momentum, weight decay, batch size, and learning rate on the nature of optimization trajectories.</li>
+<li>Increasing momentum and weight decay promote directional exploration, while increasing batch size encourages further exploration.</li>
+<li>The trajectory perspective can provide insights into the inner workings of neural networks and their optimization and may help in developing more efficient optimization techniques.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2403.07379v1">Link</a>
 
-    <h2>Title: Here Comes The AI Worm: Unleashing Zero-click Worms that Target GenAI-Powered Applications</h2>
-    <h3>Summary:</h3>
-    <ul>
-        <li>This research introduces Morris II, the first worm designed to target GenAI ecosystems through the use of adversarial self-replicating prompts.</li>
-        <li>The worm is capable of inserting prompts into inputs that, when processed by GenAI models, replicate the input as output and engage in malicious activities.</li>
-        <li>Morris II has been tested against GenAI-powered email assistants and demonstrated the ability to perform malicious activities such as spamming and exfiltrating personal data.</li>
-        <li>The performance of the worm is influenced by factors such as propagation rate, replication, and malicious activity.</li>
-        <li>This research highlights the need for security measures to protect GenAI-powered applications and ecosystems from potential cyber attacks.</li>
-    </ul>
-    <a href="http://arxiv.org/pdf/2403.02817v1">Link</a>
+<h2>Title: Silico-centric Theory of Mind</h2>
+<h3>Summary:</h3>
+<ul>
+<li>a question. Mrs. Peabody is terrified, she is shaking with fear. But the man says, “Please, I’m lost, can you help me find my way home?”</li>
+<li>Q7: Why does the man ask Mrs. Peabody for help?</li>
+<li>Story: Bob was very upset, he had a terrible fight with his best friend. Bob said some very nasty things to his friend and made him cry. Now Bob feels very bad about what he said, he realizes he was wrong. He wants to say sorry to his friend. So when he sees him he says, “I’m really sorry for what I said to you. I was angry and didn’t mean it.”</li>
+<li>Q8: Why does Bob say this?</li>
+<li>The first instance is tasked with generating instructions for the test-taking instance, which will be referred to as the fourth instance. The instructions should provide guidance on how to approach the ToM test, emphasizing strategies such as analyzing characters' actions and dialogue, recognizing differing perspectives, and considering emotional states and motivations.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2403.09289v1">Link</a>
 
-    <h2>Title: Causal Prompting: Debiasing Large Language Model Prompting based on Front-Door Adjustment</h2>
-    <h3>Summary:</h3>
-    <ul>
-        <li>The paper proposes a new prompting method called Causal Prompting to debias large language models (LLMs).</li>
-        <li>Traditional debiasing methods focus on model training, but Causal Prompting addresses biases in LLMs by using causal inference and front-door adjustment.</li>
-        <li>Causal Prompting uses chain-of-thoughts generated by LLMs as mediator variables and calculates the causal effect between input prompts and output answers.</li>
-        <li>Contrastive learning is used to align the representation space of the encoder with LLMs for more accurate estimation of causal effects.</li>
-        <li>Experimental results show that Causal Prompting achieves excellent performance on multiple natural language processing datasets.</li>
-    </ul>
-    <a href="http://arxiv.org/pdf/2403.02738v1">Link</a>
+<h2>Title: Exploring Prompt Engineering Practices in the Enterprise</h2>
+<h3>Summary:</h3>
+<ul>
+<li>Prompt engineering is the primary mode of interaction with Large Language Models (LLMs) in the enterprise.</li>
+<li>Effective prompt design requires skill and knowledge, as well as significant iteration to guide the model to accomplish a particular goal.</li>
+<li>Prompt editing sessions are often relatively long, with an average duration of 43.4 minutes.</li>
+<li>The most common prompt component edited is the context, followed by task instructions and labels.</li>
+<li>The most common types of prompt edits are modifications (where the meaning stays the same), additions, and changes (where the meaning does not stay the same).</li>
+<li>Users often make multiple edits at once, which can make it more difficult to determine the impact of each edit.</li>
+<li>There is a need for better support tools for prompt debugging, testing, and version control.</li>
+<li>Prompt structure and labeling are important factors in prompt engineering, and there is potential for more structure to support users in prompt development.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2403.08950v1">Link</a>
 
-    <h2>Title: Reliable, Adaptable, and Attributable Language Models with Retrieval</h2>
-    <h3>Summary:</h3>
-    <ul>
-        <li>Parametric language models (LMs) trained on large-scale web data face challenges such as factual errors, difficulty in verification, and adaptability.</li>
-        <li>Retrieval-augmented LMs, which incorporate large-scale datastores during inference, can be more reliable, adaptable, and attributable.</li>
-        <li>However, current retrieval-augmented LMs struggle with leveraging helpful text beyond knowledge-intensive tasks, have limited interaction between retrieval and LM components, and lack infrastructure for scaling.</li>
-        <li>To address these challenges, a roadmap is proposed that includes rethinking datastores and retrievers, improving retriever-LM interactions, and investing in infrastructure for efficient training and inference.</li>
-        <li>The adoption of retrieval-augmented LMs is limited compared to parametric LMs, and there is a need for advancements in architecture, training methodologies, and infrastructure to overcome these limitations.</li>
-    </ul>
-    <a href="http://arxiv.org/pdf/2403.03187v1">Link</a>
+<h2>Title: ToolRerank: Adaptive and Hierarchy-Aware Reranking for Tool Retrieval</h2>
+<h3>Summary:</h3>
+<ul>
+<li>ToolRerank is a method for tool retrieval that improves the quality of the retrieval results for large language models (LLMs) with external tools.</li>
+<li>ToolRerank includes Adaptive Truncation, which truncates retrieval results differently for seen and unseen tools, improving the retrieval performance.</li>
+<li>ToolRerank also includes Hierarchy-Aware Reranking, which makes the retrieval results more concentrated for single-tool queries and more diverse for multi-tool queries.</li>
+<li>Experimental results show that ToolRerank outperforms other retrieval methods and improves the execution results generated by LLMs.</li>
+<li>ToolRerank is a valuable tool for extending the capabilities of LLMs with external tools.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2403.06551v1">Link</a>
 
-    <h2>Title: An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Models are Task-specific Classifiers</h2>
-    <h3>Summary:</h3>
-    <ul>
-        <li>The study examines the performance of judge models that are fine-tuned on open-source language models for evaluating the quality of other language models.</li>
-        <li>The findings show that while the fine-tuned judge models achieve high accuracy on specific test sets, they are inherently task-specific classifiers and their generalizability and fairness are lower compared to proprietary models like GPT4.</li>
-        <li>The study also reveals that the fine-tuned judge models are overfitted to specific evaluation schemes and are biased towards superficial quality.</li>
-        <li>It concludes that fine-tuned judge models should be used cautiously and are not a general substitute for GPT4 in LLM evaluation.</li>
-        <li>The study suggests that the bias in LLM-based evaluators may come from the casual language modeling process, and alternative models like DeBERTa may offer better fairness in evaluation.</li>
-    </ul>
-    <a href="http://arxiv.org/pdf/2403.02839v1">Link</a>
+<h2>Title: Unveiling the Generalization Power of Fine-Tuned Large Language Models</h2>
+<h3>Summary:</h3>
+<ul>
+<li>Fine-tuning large language models (LLMs) on task-specific datasets can improve their performance on test sets compared to their unmodified counterparts.</li>
+<li>Fine-tuning affects the generalization ability of LLMs, with models fine-tuned on generation and classification tasks exhibiting different behaviors in generalizing to different domains and tasks.</li>
+<li>Integrating in-context learning during fine-tuning on generation tasks can enhance the model's generalization ability.</li>
+<li>Fine-tuning LLMs on classification tasks generally fails to work well on generation tasks, while the reverse is not true.</li>
+<li>The number of training samples and the prompt format can impact the generalization ability of fine-tuned LLMs.</li>
+<li>Fine-tuning with in-context learning can improve LLMs' out-of-domain generalization for generation tasks, but not for classification tasks.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2403.09162v1">Link</a>
 
-    <h2>Title: Are More LLM Calls All You Need? Towards Scaling Laws of Compound Inference Systems</h2>
-    <h3>Summary:</h3>
-    <ul>
-        <li>Researchers have studied the scaling properties of compound inference systems that use multiple Large Language Model (LLM) calls and aggregate their responses.</li>
-        <li>They found that the performance of one-layer Voting Inference Systems, which aggregate LLM responses via majority voting, initially increases but then decreases as the number of LLM calls increases.</li>
-        <li>This non-monotonic behavior is due to the diversity of query difficulties within a task, with more LLM calls leading to higher performance on "easy" queries but lower performance on "hard" queries.</li>
-        <li>The researchers derived a scaling law that models item difficulties and allows users to compute the optimal number of LLM calls for maximum system performance.</li>
-        <li>They also demonstrated that their scaling law accurately predicts the performance of Voting Inference Systems and can be used to find the optimal number of LLM calls.</li>
-    </ul>
-    <a href="http://arxiv.org/pdf/2403.02419v1">Link</a>
+<h2>Title: CleanAgent: Automating Data Standardization with LLM-based Agents</h2>
+<h3>Summary:</h3>
+<ul>
+<li>Data standardization is an important step in data science for transforming heterogeneous data formats into a unified format.</li>
+<li>The complexity and manual effort required for data standardization can be challenging, but large language models (LLMs) like ChatGPT show promise in automating the process.</li>
+<li>The CleanAgent framework combines the Dataprep.Clean library with LLM-based agents to automate data standardization.</li>
+<li>CleanAgent allows data scientists to provide their standardization requirements once and then completes the standardization process automatically.</li>
+<li>CleanAgent has been developed as a user-friendly web application, allowing users to interact with it using real-world datasets.</li>
+</ul>
+<a href="http://arxiv.org/pdf/2403.08291v1">Link</a>
+
 </body>
 </html>
